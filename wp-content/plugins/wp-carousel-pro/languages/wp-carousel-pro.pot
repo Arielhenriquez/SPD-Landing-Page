@@ -1,0 +1,4752 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Carousel Pro v4.2.2\n"
+"POT-Creation-Date: 2025-10-17 16:55+0600\n"
+"PO-Revision-Date: 2023-12-29 11:47+0600\n"
+"Last-Translator: \n"
+"Language-Team: ShapedPlugin.com\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex;_n;_nx;_n_noop;esc_html__;esc_html_e;"
+"esc_html_x;esc_attr__;esc_attr_e;esc_attr_x;number_format_i18n;date_i18n\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/Admin/Admin.php:146
+msgid "Invalid Post ID."
+msgstr ""
+
+#: src/Admin/Admin.php:150 src/Admin/Admin.php:192
+msgid "You are not allowed to edit sliders."
+msgstr ""
+
+#: src/Admin/Admin.php:314
+msgid "Image Link"
+msgstr ""
+
+#: src/Admin/Admin.php:317
+msgid "Error WP Carousel linking meta."
+msgstr ""
+
+#: src/Admin/Admin.php:320
+msgid "Open New Tab"
+msgstr ""
+
+#: src/Admin/Admin.php:324
+msgid "Image Link and Open a New Tab. Only for WP Carousel Pro"
+msgstr ""
+
+#: src/Admin/Admin.php:364 src/Admin/Admin.php:367
+msgid "Shortcode updated."
+msgstr ""
+
+#: src/Admin/Admin.php:369
+#, php-format
+msgid "Shortcode restored to revision from %s"
+msgstr ""
+
+#: src/Admin/Admin.php:370
+msgid "Shortcode published."
+msgstr ""
+
+#: src/Admin/Admin.php:371
+msgid "Shortcode saved."
+msgstr ""
+
+#: src/Admin/Admin.php:372
+msgid "Shortcode submitted."
+msgstr ""
+
+#: src/Admin/Admin.php:374
+#, php-format
+msgid "Shortcode scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: src/Admin/Admin.php:374
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: src/Admin/Admin.php:375
+msgid "Shortcode draft updated."
+msgstr ""
+
+#: src/Admin/Admin.php:387 src/Admin/views/Media_View/Media_View.php:219
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:556
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1489
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1503
+msgid "Title"
+msgstr ""
+
+#: src/Admin/Admin.php:388
+msgid "Shortcode"
+msgstr ""
+
+#: src/Admin/Admin.php:389
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:76
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:173
+msgid "Source Type"
+msgstr ""
+
+#: src/Admin/Admin.php:390
+msgid "Layout Type"
+msgstr ""
+
+#: src/Admin/Admin.php:391
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:554
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1183
+msgid "Date"
+msgstr ""
+
+#: src/Admin/Admin.php:430 src/Admin/Admin.php:449
+msgid "No shortcode to duplicate has been supplied!"
+msgstr ""
+
+#: src/Admin/Admin.php:514
+msgid "Shortcode duplication failed, could not find original shortcode: "
+msgstr ""
+
+#: src/Admin/Admin.php:530
+msgid "Duplicate"
+msgstr ""
+
+#: src/Admin/Admin.php:547
+#, php-format
+msgid ""
+"If you like %1$sWP Carousel Pro%2$s, please leave us a %3$s rating. Your "
+"review is very important to us as it helps us to grow more."
+msgstr ""
+
+#: src/Admin/Cron_Schedules.php:39
+msgid "Once Weekly"
+msgstr ""
+
+#: src/Admin/views/ElementAddon/Elementor_Addon_Widget.php:43
+#: src/Admin/views/GutenbergBlock/src/index.js:16
+#: src/Admin/views/GutenbergBlock/src/index.js:101
+#: src/Admin/views/GutenbergBlock/src/index.js:148
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:50
+msgid "WP Carousel Pro"
+msgstr ""
+
+#: src/Admin/views/ElementAddon/Elementor_Addon_Widget.php:116
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:100
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:428
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:646
+msgid "Content"
+msgstr ""
+
+#: src/Admin/views/ElementAddon/Elementor_Addon_Widget.php:124
+msgid "WP Carousel Shortcode(s)"
+msgstr ""
+
+#: src/Admin/views/GutenbergBlock/src/index.js:18
+msgid "Use WP Carousel to insert a carousel or gallery in your page."
+msgstr ""
+
+#: src/Admin/views/GutenbergBlock/src/index.js:106
+msgid "No shortcode found. "
+msgstr ""
+
+#: src/Admin/views/GutenbergBlock/src/index.js:110
+msgid "Create a shortcode now!"
+msgstr ""
+
+#: src/Admin/views/GutenbergBlock/src/index.js:153
+msgid "Select a shortcode"
+msgstr ""
+
+#: src/Admin/views/GutenbergBlock/src/shortcode/dynamicShortcode.js:13
+msgid "-- Select a shortcode --"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:54
+msgid "WP Carousel Help"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:55
+msgid "Get Help"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:73
+msgid "Welcome to WP Carousel Pro! "
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:77
+msgid ""
+"Thank you for installing WP Carousel Pro! You're now running the most "
+"popular Carousel, Slider, and Gallery plugin.\n"
+"This video will help you get started with the plugin."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:91
+msgid "Documentation"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:92
+msgid ""
+"Check out our documentation page and more information about what you can do "
+"with WP Carousel Pro."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:93
+msgid "Browse Docs"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:99
+msgid "Email Support"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:100
+msgid ""
+"Need one-to-one assistance? Get in touch with our top-notch support team! "
+"We'd love to help you immediately."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:101
+msgid "Get Support"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:107
+msgid "Video Tutorials"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:108
+msgid ""
+"Check our video tutorials which cover everything you need to know about WP "
+"Carousel Pro."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:109
+msgid "Watch Now"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:116
+msgid "Take your website beyond the typical with more WordPress plugins!"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:117
+msgid ""
+"Some of our powerful premium plugins are ready to make your website awesome."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:124
+msgid "Product Slider for WooCommerce"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:125
+msgid ""
+"Boost sales by interactive product Slider, Grid, and Table in your "
+"WooCommerce website or store."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:134
+msgid "Logo Carousel"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:135
+msgid ""
+"Showcase a group of logo images with Title, Description, Tooltips, Links, "
+"and Popup as a grid or in a carousel."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:144
+msgid "Real Testimonials"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:145
+msgid ""
+"Simply collect, manage, and display Testimonials on your website and boost "
+"conversions."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:156
+msgid "WooGallery"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:157
+msgid ""
+"Product gallery slider and additional variation images gallery for "
+"WooCommerce and boost your sales."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:166
+msgid "Easy Accordion"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:167
+msgid ""
+"Minimize customer support by offering comprehensive FAQs and increasing "
+"conversions."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:176
+msgid "Smart Post Show"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:177
+msgid ""
+"Filter and display posts (any post types), pages, taxonomy, custom taxonomy, "
+"and custom field, in beautiful layouts."
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:204
+msgid "Create Carousel"
+msgstr ""
+
+#: src/Admin/views/Help_Page.php:208
+msgid "Activate license"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:94
+msgid "Edit previous media item"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:95
+msgid "Edit next media item"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:98
+msgid "Edit Item"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:109
+msgid "Choose Video Placeholder Image"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:110
+msgid "Remove Video Placeholder Image"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:150
+#: src/Admin/views/Media_View/Media_View.php:360
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1504
+msgid "Caption"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:173
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1513
+msgid "Description"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:190
+msgid "Description for the slide image. Field accepts any valid HTML."
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:199
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:771
+msgid "Link URL"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:202
+#: src/Admin/views/Media_View/Media_View.php:385
+msgid "Media File"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:203
+#: src/Admin/views/Media_View/Media_View.php:386
+msgid "Attachment Page"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:208
+msgid "Open a New Tab"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:222
+msgid "Enter the title for your slide."
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:228
+#: src/Admin/views/Media_View/Media_View.php:350
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1505
+msgid "Alt Text"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:231
+#: src/Admin/views/Media_View/Media_View.php:353
+msgid ""
+"Describes the image for search engines and screen readers. Important for SEO "
+"and accessibility."
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:239
+msgid "Crop Position"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:252
+msgid ""
+"The Crop Position option is applicable only when using the custom crop size."
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:289
+#: src/Admin/views/Media_View/Media_View.php:381
+#: src/Admin/views/Media_View/Media_View.php:390
+#: src/Admin/views/Media_View/Media_View.php:407
+msgid "URL"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:298
+msgid "Code"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:310
+#: src/Admin/views/Media_View/Media_View.php:311
+#: src/Admin/views/Media_View/Media_View.php:418
+#: src/Admin/views/Media_View/Media_View.php:419
+msgid "Save Metadata"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:317
+#: src/Admin/views/Media_View/Media_View.php:424
+msgid "Saved."
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:332
+msgid "Bulk Edit"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:391
+msgid "Enter a hyperlink to link this slide to another page."
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:396
+msgid "Open URL in New Window?"
+msgstr ""
+
+#: src/Admin/views/Media_View/Media_View.php:398
+msgid "Opens your image links in a new browser window / tab."
+msgstr ""
+
+#: src/Admin/views/sp_framework/assets/js/main.js:4321
+#: src/Admin/views/sp_framework/assets/js/main.min.js:1
+msgid "The file URL has been copied to your clipboard"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:507
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:734
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:855
+msgid "Saving..."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:508
+msgid "Choose a Video Placeholder Image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:509
+msgid "Select Placeholder Image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:521
+msgid "Are you sure?"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:523
+#, php-format
+msgid "Please enter %s or more characters"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:524
+msgid "Searching..."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:525
+msgid "No results found."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:529
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:236
+#: src/Frontend/Frontend.php:253
+msgid "Zoom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:530
+#: src/Frontend/Frontend.php:254
+msgid "Full Screen"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:531
+#: src/Frontend/Frontend.php:255
+msgid "Start Slideshow"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:532
+#: src/Frontend/Frontend.php:256
+msgid "Share"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:533
+#: src/Frontend/Frontend.php:257
+msgid "Download"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:534
+#: src/Frontend/Frontend.php:258
+msgid "Thumbnails"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:535
+#: src/Frontend/Frontend.php:259
+msgid "Close"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:579
+msgid "Oops! Not allowed."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:654
+#: src/Admin/views/sp_framework/classes/SP_WPCP_Framework.php:657
+msgid "Field not found!"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:344
+msgid "Error while saving the changes."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:426
+msgid "Settings successfully imported."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:438
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:453
+msgid "Default settings restored."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:519
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:729
+msgid "show all settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:731
+msgid "Search..."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:734
+msgid "Save Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:735
+msgid "Reset Tab"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:735
+msgid "Are you sure to reset all the settings of this tab?"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:736
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:857
+msgid "Reset All"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:736
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:857
+#: src/Admin/views/sp_framework/classes/metabox-options.class.php:363
+msgid "Reset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:736
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:857
+msgid "Are you sure you want to reset all settings to default values?"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:832
+#: src/Admin/views/sp_framework/classes/metabox-options.class.php:348
+#: src/Admin/views/sp_framework/fields/button_clean/button_clean.php:85
+#: src/Admin/views/sp_framework/fields/button_set/button_set.php:87
+#: src/Admin/views/sp_framework/fields/checkbox/checkbox.php:106
+#: src/Admin/views/sp_framework/fields/radio/radio.php:93
+#: src/Admin/views/sp_framework/fields/select/select.php:160
+msgid "No data available."
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:855
+msgid "Save"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:856
+msgid "Restore"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/admin-options.class.php:856
+msgid "Are you sure to reset this section options?"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/fields.class.php:466
+msgid "Select username"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/metabox-options.class.php:364
+msgid "update post"
+msgstr ""
+
+#: src/Admin/views/sp_framework/classes/metabox-options.class.php:364
+msgid "Cancel"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:22
+msgid "Carousel Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:31
+msgid "Basics"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:38
+msgid "AutoPlay"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:39
+msgid "Enable/Disable carousel auto play."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:41
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:105
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:116
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:138
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:483
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:494
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:505
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:517
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:533
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:583
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:601
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:614
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:40
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:65
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:76
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:114
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:344
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:355
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:284
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:652
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:664
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:752
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:821
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:837
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:856
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:915
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:928
+#: src/Admin/views/sp_framework/configs/option-config.php:94
+#: src/Admin/views/sp_framework/configs/option-config.php:307
+msgid "Enabled"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:42
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:106
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:117
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:139
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:484
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:495
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:506
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:518
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:534
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:584
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:602
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:615
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:41
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:66
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:77
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:115
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:345
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:356
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:285
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:653
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:665
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:753
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:822
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:838
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:857
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:916
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:929
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:773
+#: src/Admin/views/sp_framework/configs/option-config.php:95
+#: src/Admin/views/sp_framework/configs/option-config.php:308
+msgid "Disabled"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:49
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:52
+msgid "AutoPlay Delay Time"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:50
+msgid "Set auto play delay time in millisecond."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:52
+msgid ""
+"Set autoplay delay or interval time. The amount of time to delay between "
+"automatically cycling a item. e.g. 1000 milliseconds(ms) = 1 second."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:53
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:71
+msgid "ms"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:68
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:70
+msgid "Carousel Speed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:69
+msgid "Set autoplay scroll speed in millisecond."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:70
+msgid "Set carousel scrolling speed. e.g. 1000 milliseconds(ms) = 1 second."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:82
+msgid "Sliding Speed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:83
+msgid "Set sliding or scrolling speed. Default value is 8000 milliseconds."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:102
+msgid "Pause on Hover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:103
+msgid "Enable/Disable carousel pause on hover."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:112
+msgid "Infinite Loop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:113
+msgid "Enable/Disable infinite loop mode. It won't work well in the multi-row."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:123
+msgid "Carousel Direction"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:124
+msgid "Select carousel direction as you need."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:126
+msgid "Right to Left"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:127
+msgid "Left to Right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:135
+msgid "Adaptive Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:136
+msgid "Enable/Disable adaptive height for the carousel."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:146
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:159
+msgid "Navigation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:160
+msgid "Show/Hide carousel navigation."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:162
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:354
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:275
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:294
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:313
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:333
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:372
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:383
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:394
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:405
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:416
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:427
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:438
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:43
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:700
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:942
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:961
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:972
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:993
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1048
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1069
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1103
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1163
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1174
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1185
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1196
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1208
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1223
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1318
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1339
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1373
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1392
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1435
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1491
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1515
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1547
+msgid "Show"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:163
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:355
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:276
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:295
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:314
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:334
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:373
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:384
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:395
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:406
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:417
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:428
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:439
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:44
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:701
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:943
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:962
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:973
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:994
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1049
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1070
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1104
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1164
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1175
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1186
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1197
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1209
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1224
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1319
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1340
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1353
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1374
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1393
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1436
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1492
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1516
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1548
+msgid "Hide"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:171
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:363
+msgid "Hide on Mobile"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:182
+msgid "Select Position"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:183
+msgid "Select a position for the navigation arrows."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:185
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:159
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:213
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:241
+msgid "Top Right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:186
+msgid "Top Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:187
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:163
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:205
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:233
+msgid "Top Left"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:188
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:171
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:201
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:229
+msgid "Bottom Left"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:189
+msgid "Bottom Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:190
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:167
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:237
+msgid "Bottom Right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:191
+msgid "Vertical Inner"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:192
+msgid "Vertical Outer"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:193
+msgid "Vertical Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:201
+msgid "Show On Hover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:202
+msgid "Check to show navigation on hover in the carousel or slider area."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:214
+msgid "Navigation Arrow Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:215
+msgid "Choose a carousel navigation arrow icon."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:240
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:181
+msgid "Icon Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:241
+msgid "Set a size for the nav arrow icon."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:262
+msgid "Navigation Arrow "
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:263
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:319
+msgid "Set color for the carousel navigation arrow."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:265
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:321
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:440
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:443
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:703
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:707
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:88
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:193
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:902
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1030
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1406
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1464
+#: src/Admin/views/sp_framework/fields/background/background.php:357
+msgid "Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:266
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:322
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:708
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:89
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:194
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1031
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1141
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1465
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1585
+#: src/Admin/views/sp_framework/fields/typography/typography.php:396
+msgid "Hover Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:296
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:711
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:801
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:803
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1010
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1120
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1262
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1564
+msgid "Border"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:297
+msgid "Set border for the navigation."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:318
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:709
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:90
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:195
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1032
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1142
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1248
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1466
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1586
+msgid "Background"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:338
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:351
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:617
+msgid "Pagination"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:352
+msgid "Show/Hide carousel pagination."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:374
+msgid "Pagination Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:375
+msgid "Select carousel pagination type."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:379
+msgid "Bullets"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:383
+msgid "Dynamic"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:387
+msgid "Strokes"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:391
+msgid "Scrollbar"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:395
+msgid "Fraction"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:399
+msgid "Numbers"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:409
+#: src/Admin/views/sp_framework/configs/option-config.php:260
+msgid "Position"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:410
+msgid "Select a position for the pagination."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:412
+msgid "Inside"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:413
+msgid "Outside"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:422
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1279
+#: src/Admin/views/sp_framework/configs/option-config.php:279
+msgid "Margin"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:423
+msgid "Set margin for carousel pagination."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:441
+msgid "Set color for the carousel pagination."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:444
+msgid "Active Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:455
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:457
+msgid "Slide to Scroll"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:456
+msgid "Number of slide(s) to scroll at a time."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:472
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:480
+msgid "Tab and Key Navigation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:481
+msgid "Enable/Disable carousel scroll with tab and keyboard."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:491
+msgid "Touch Swipe"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:492
+msgid "Enable/Disable touch swipe mode."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:502
+msgid "Mouse Draggable"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:503
+msgid "Enable/Disable mouse draggable mode."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:513
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:515
+msgid "Free Mode"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:514
+msgid "Enable/Disable free mode slider."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:515
+msgid ""
+"Enable this feature to allow users to freely scroll and position the slides "
+"at anywhere instead of specific positions."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:515
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:245
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:283
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:581
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:764
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:869
+msgid "Live Demo"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:530
+msgid "Mousewheel Scroll"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/carousel-section.php:531
+msgid ""
+"Allow users to drag or swipe directly to a slide irrespective of slides to "
+"scroll."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:23
+msgid "Shortcode Section"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:38
+msgid "General Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:46
+msgid "Layout Preset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:47
+msgid "Choose a layout preset."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:51
+msgid "Carousel"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:56
+msgid "Slider"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:61
+msgid "Thumbs Slider"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:66
+msgid "Grid"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:71
+msgid "Tiles"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:76
+msgid "Masonry"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:81
+msgid "Justified"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:91
+msgid "Thumbnails Position"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:92
+msgid "Choose a thumbnails position."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:96
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:125
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:177
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:257
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:346
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:498
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:58
+msgid "Bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:100
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:129
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:185
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:261
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:344
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:496
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:56
+msgid "Top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:104
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:137
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:157
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:265
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:59
+#: src/Admin/views/sp_framework/fields/typography/typography.php:229
+msgid "Left"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:108
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:133
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:161
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:269
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:57
+#: src/Admin/views/sp_framework/fields/typography/typography.php:231
+msgid "Right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:118
+msgid "Slider Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:119
+msgid "Choose a slider style."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:123
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:262
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:219
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:238
+msgid "Slide"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:127
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:263
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:218
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:237
+msgid "Fade"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:131
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:267
+msgid "Ken Burns"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:135
+msgid "Shaders"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:139
+msgid "Slicer"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:143
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:184
+msgid "Shutters"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:147
+msgid "Fashion"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:151
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:264
+msgid "Coverflow"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:155
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:265
+msgid "Flip"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:159
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:266
+msgid "Cube"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:168
+msgid "Slider Effect"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:169
+msgid "Select a slider effect."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:171
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:542
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:555
+msgid "Random"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:172
+msgid "Dots"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:173
+msgid "Flyeye"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:174
+msgid "Morph X"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:175
+msgid "Morph Y"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:176
+msgid "Page Curl"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:177
+msgid "Peel X"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:178
+msgid "Peel Y"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:179
+msgid "Polygons Fall"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:180
+msgid "Polygons Morph"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:181
+msgid "Polygons Wind"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:182
+msgid "Pixelize"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:183
+msgid "Sripple"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:185
+msgid "Slices"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:186
+msgid "Squares"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:187
+msgid "Stretch"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:188
+msgid "Wave X"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:189
+msgid "Wind"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:198
+msgid "Carousel Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:199
+msgid "Choose a carousel style."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:203
+msgid "Standard"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:207
+msgid "Ticker"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:211
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:181
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:273
+#: src/Admin/views/sp_framework/fields/typography/typography.php:230
+msgid "Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:215
+msgid "Multi Row"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:219
+msgid "3D Carousel"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:223
+msgid "Panorama"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:227
+msgid "Triple"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:231
+msgid "Spring"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:240
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:243
+msgid "Carousel Orientation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:241
+msgid "Choose a carousel orientation."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:243
+msgid "Choose the carousel slide movement:"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:244
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:247
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:282
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:285
+msgid "Horizontal"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:244
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:282
+msgid "If you want the slides to transition horizontally, select"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:245
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:248
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:283
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:286
+msgid "Vertical"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:245
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:283
+msgid "If you want the slides to transition vertically, select"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:245
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:283
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:581
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:764
+msgid "Open Docs"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:257
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:260
+msgid "Slide Effect"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:258
+msgid "Select a slide transition effect."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:260
+msgid ""
+"Enhance your slide transition with charming Slide Effects to add elegance "
+"and dynamic motion to your slides."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:279
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:281
+msgid "Slider Orientation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:294
+msgid "Carousel Row"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:295
+msgid "Set number of carousel row on devices."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:315
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:336
+msgid "Columns"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:316
+msgid "Set number of column on devices."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:337
+msgid "Set maximum & minimum column number."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:352
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:354
+msgid "Space"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:353
+msgid "Set a space between the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:359
+msgid "Vertical Gap"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:360
+msgid "Gap"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:374
+msgid "Hide Thumbnails on Mobile"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:381
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:382
+msgid "Thumbnails Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:384
+#: src/Admin/views/sp_framework/fields/background/background.php:288
+msgid "Auto"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:385
+msgid "Static"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:393
+msgid "Thumbnails Static Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:408
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:410
+msgid "Row Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:409
+msgid "Set a row height for justified layout."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:424
+msgid "Items Width"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:425
+msgid "Set a width for the each items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:444
+msgid "Center Padding"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:445
+msgid "Set center mode padding."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:462
+msgid "Slider Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:463
+msgid "Set a height for Shaders, Slicer and Shutters effect."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:497
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:769
+msgid "Click Action Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:509
+msgid "Set a click action type for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:517
+msgid "Nofollow"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:525
+msgid "Target"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:527
+msgid "Current Tab"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:528
+msgid "New Tab"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:538
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:550
+msgid "Order By"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:539
+msgid "Set an order by option."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:541
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:559
+msgid "Drag & Drop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:551
+msgid "Select an order by option."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:553
+msgid "ID"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:557
+msgid "Modified"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:558
+msgid "Menu Order"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:567
+msgid "Order"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:568
+msgid "Select an order option."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:570
+msgid "Ascending"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:571
+msgid "Descending"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:579
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:581
+msgid "Scheduling"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:580
+msgid "Schedule sliders or galleries to show at specific time intervals."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:581
+msgid ""
+"Enable the scheduling feature to set the specific date and time for your "
+"carousel sliders or galleries to be displayed (perfect for highlighting time-"
+"sensitive content)."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:592
+msgid "Set a time according to your website time zone."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:598
+msgid "Preloader"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:599
+msgid "Items will be hidden until page load completed."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:608
+msgid "Load More Pagination"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:618
+msgid "Enable to show pagination."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:625
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:638
+msgid "Pagination Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:626
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:639
+msgid "Select pagination type."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:628
+msgid "Load More Button(Ajax)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:629
+msgid "Load More on Infinite Scroll(Ajax)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:630
+msgid "Number Pagination(Ajax)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:641
+msgid "Load More Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:642
+msgid "Load More on Infinite Scroll"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:643
+msgid "Ajax Number Pagination"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:644
+msgid "No Ajax (Normal Pagination)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:652
+msgid "Load More Button Label"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:653
+msgid "Change load more button label."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:660
+msgid "Items To Show Per Page"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:661
+msgid "Set items to show per page."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:670
+msgid "Items To Show Per Click"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:671
+msgid "Set items to show per click."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:680
+msgid "Item(s) To Show Per Click"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:681
+msgid "Set item(s) to show per click."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:690
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1295
+msgid "Alignment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:691
+msgid "Choose pagination alignment."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:704
+msgid "Set pagination color."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:710
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:91
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:196
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1033
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1143
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1249
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1467
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1587
+msgid "Hover Background"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/general-section.php:712
+msgid "Hover Border"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:22
+msgid "Lightbox Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:31
+msgid "General"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:37
+msgid "AutoPlay "
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:38
+msgid "Enable to automatically start slideshow."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:49
+msgid "Speed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:50
+msgid "The timeout between sliding to the next slide in milliseconds."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:63
+msgid "Loop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:64
+msgid "Enable/Disable infinite gallery navigation."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:74
+msgid "Keyboard Navigation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:75
+msgid "Enable/Disable keyboard navigation for the lightbox image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:85
+msgid "Lightbox Navigation Arrow"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:86
+msgid "Set navigation color for the lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:104
+msgid "Overlay Background Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:105
+msgid "Set overlay background color for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:112
+msgid "Overlay/Outside Close"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:113
+msgid "Close when clicked outside of the image and content or dark overlay."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:122
+msgid "Lightbox Icons"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:129
+msgid "Lightbox Icon Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:130
+msgid "Choose an icon on hover image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:141
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:224
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:243
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:386
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:606
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:871
+#: src/Admin/views/sp_framework/fields/border/border.php:80
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:97
+#: src/Admin/views/sp_framework/fields/typography/typography.php:267
+#: src/Admin/views/sp_framework/fields/typography/typography.php:286
+msgid "None"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:149
+msgid "Icon Display Position"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:150
+msgid "Select an icon display position on image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:155
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:345
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:497
+msgid "Middle"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:182
+msgid "Set icon size for image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:190
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1246
+msgid "Icon Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:191
+msgid "Set color for the lightbox icon."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:208
+msgid "Animation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:214
+msgid "Transition Effect Between Slides"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:215
+msgid "Select a transition effect between slides for lightbox image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:220
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:239
+msgid "Circular"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:221
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:240
+msgid "Tube"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:222
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:241
+msgid "Zoom-in-out"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:223
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:242
+msgid "Rotate"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:232
+msgid "Open/Close Animation Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:233
+msgid "Select an animation type for opening/closing lightbox image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:258
+msgid "Image & Thumbnails"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:264
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:266
+msgid "Image Icon Overlay Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:265
+msgid "Set icon overlay color for image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:273
+msgid "Image Caption"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:274
+msgid "Show/Hide image caption for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:284
+msgid "Caption Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:285
+msgid "Change the color for lightbox image caption."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:292
+msgid "Image Description"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:293
+msgid "Show/Hide image description for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:303
+msgid "Description Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:304
+msgid "Change the color for lightbox image description."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:311
+msgid "Image Counter"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:312
+msgid "Show/Hide image counter for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:322
+msgid "Disable Image Hover Overlay on the Mobile Devices"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:323
+msgid "Check to disable image hover overlay on the mobile devices."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:330
+msgid "Bottom Thumbnails Gallery Visibility"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:331
+msgid "Show/Hide bottom thumbnails gallery visibility for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:332
+msgid "Lightbox Bottom Thumbnails Gallery"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:342
+msgid "Sharper Image on Retina Display"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:343
+msgid "Enable/Disable sharper image on retina display for lightbox image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:353
+msgid "Protect Images"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:354
+msgid "Protect an image downloading from right-click."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:364
+msgid "Toolbar"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:370
+msgid "Zoom Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:371
+msgid "Show/Hide zoom button for lightbox image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:381
+msgid "Full-Screen Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:382
+msgid "Show/Hide full-screen button for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:392
+msgid "Slideshow Play Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:393
+msgid "Show/Hide slideshow play button for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:403
+msgid "Social Share Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:404
+msgid "Show/Hide social share button for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:414
+msgid "Download Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:415
+msgid "Show/Hide download button for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:425
+msgid "Close Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:426
+msgid "Show/Hide close bottom for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:436
+msgid "Lightbox Bottom Thumbnails Gallery Icon"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/lightbox-section.php:437
+msgid "Show/Hide bottom thumbnails gallery icon for lightbox."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/shortcode-display.php:29
+msgid "How To Use"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/shortcode-display.php:52
+msgid "Page Builders"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:23
+msgid "Display Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:33
+msgid "Item Styles"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:40
+msgid "Section Title"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:41
+msgid "Show/Hide the section title."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:50
+msgid "Section Background Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:51
+msgid "Set a background color for the Section."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:58
+msgid "Slide Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:59
+msgid "Set height for the slides in pixel."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:81
+msgid "Items Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:82
+msgid "Select an item style for the title, description, meta etc."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:86
+msgid "Classic"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:90
+#: src/Admin/views/sp_framework/fields/background/background.php:352
+msgid "Overlay"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:94
+msgid "Caption Full"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:98
+msgid "Caption Part"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:102
+msgid "Diagonal"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:106
+#: src/Admin/views/sp_framework/fields/background/background.php:309
+#: src/Admin/views/sp_framework/fields/background/background.php:330
+msgid "Content Box"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:110
+msgid "Moving"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:120
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:147
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:171
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:195
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:223
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:251
+msgid "Content Position"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:121
+msgid "Set a position for the content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:148
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:172
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:196
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:224
+msgid "Set a position for content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:153
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1351
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1527
+msgid "Full"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:209
+msgid "Bottom right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:252
+msgid "Set a position for the content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:283
+msgid "Enable Equal Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:287
+msgid "Enable to make all items or slides equal to the tallest one."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:288
+msgid "Equal Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:295
+msgid "Content Box Border"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:296
+msgid "Set content box border for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:313
+msgid "Content Box-Shadow"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:314
+msgid "Check to enable content box-shadow for the item."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:321
+msgid "Content Box-Shadow Values"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:322
+msgid "Set content box-shadow property values for the item."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:340
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:342
+msgid "Content Vertical Alignment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:341
+msgid "Select a vertical alignment for the content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:355
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:357
+msgid "Content Box Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:356
+msgid "Set content box size."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:368
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:370
+msgid "Overlay Content Visibility"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:369
+msgid "Set visibility for the overlay content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:372
+msgid "Always"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:373
+msgid "On Hover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:383
+msgid "Animation Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:384
+msgid "Select an animation type for the overlay content on hover."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:387
+msgid "fadeIn"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:388
+msgid "fadeInDown"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:389
+msgid "fadeInRight"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:390
+msgid "fadeInLeft"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:391
+msgid "fadeInUp"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:392
+msgid "flipInX"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:393
+msgid "flipInY"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:394
+msgid "slideInUp"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:395
+msgid "slideInDown"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:396
+msgid "zoomIn"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:397
+msgid "zoomInDown"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:398
+msgid "jackInTheBox"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:399
+msgid "rollIn"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:407
+msgid "Overlay Background Color Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:408
+msgid "Select overlay background color type."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:410
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:452
+#: src/Admin/views/sp_framework/fields/border/border.php:72
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:89
+#: src/Admin/views/sp_framework/fields/typography/typography.php:287
+msgid "Solid"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:411
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:453
+msgid "Gradient"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:420
+msgid "Solid Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:421
+msgid "Set a color for the overlay background."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:430
+msgid "Gradient Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:431
+msgid "Set gradient color for the tab title background."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:449
+msgid "Content Box Background Color Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:450
+msgid "Select content box background color type."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:462
+msgid "Content Solid Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:463
+msgid "Set a color for the overlay content background."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:472
+msgid "Content Gradient Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:473
+msgid "Set gradient color for the tab content background."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:492
+msgid "Items Vertical Alignment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:493
+msgid "Select a vertical alignment for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:494
+msgid "Slider Vertical Alignment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:506
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:508
+msgid "Items Border"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:507
+msgid "Set border for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:522
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:524
+msgid "Items Inner Padding"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:523
+msgid "Set an inner padding for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:543
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:545
+msgid "Content Padding"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:544
+msgid "Set content inner padding of the item."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:565
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:567
+msgid "Content Box Padding"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:566
+msgid "Set content inner padding of the slide. Default value is 0."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:586
+msgid "Items Background Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:587
+msgid "Set a background color for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:601
+msgid "Items Box-Shadow"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:602
+msgid "Set Box-Shadow for the items."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:604
+#: src/Admin/views/sp_framework/fields/border/border.php:77
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:94
+msgid "Outset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:605
+#: src/Admin/views/sp_framework/fields/border/border.php:76
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:93
+msgid "Inset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:613
+msgid "Box-Shadow Values"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:614
+msgid "Set box-shadow property values for the item."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:630
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:92
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:467
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:650
+msgid "Video"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:637
+msgid "Video Play Mode"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:638
+msgid "Set a video play mode."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:640
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:840
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:772
+msgid "Lightbox"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:641
+msgid "Inline"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:650
+msgid "Video Autoplay"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:651
+msgid "Enable/Disable video autoplay."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:656
+msgid "When enabled,Video sound will be muted by default."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:662
+msgid "Video Loop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:663
+msgid "Enable/Disable video loop."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:673
+msgid "Video Icon Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:674
+msgid "Set size for video icon."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:682
+msgid "Video Icon Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:683
+msgid "Used as video icon color."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:691
+msgid "Image Styles"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:698
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:80
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:642
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:760
+msgid "Image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:699
+msgid "Show/Hide slide image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:710
+msgid "Dimensions"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:712
+msgid "Set dimensions for the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:719
+#: src/Admin/views/sp_framework/configs/option-config.php:304
+msgid "Custom Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:720
+msgid "Set width and height of the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:725
+msgid "Width"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:726
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:762
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:764
+msgid "Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:727
+msgid "Crop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:750
+msgid "Load 2x Resolution Image in Retina Display"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:751
+msgid "You should upload 2x sized images to show in retina display."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:763
+msgid "Set image height on different devices."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:764
+msgid ""
+"Set image height on various devices for ideal responsiveness. Ensure your "
+"content looks great on every screen size with customized image heights."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:793
+msgid "Image Width Auto"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:794
+msgid "Check to make image width auto."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:802
+msgid "Set border for the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:817
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:819
+msgid "Variable Width"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:818
+msgid " The number of columns depends on the image width."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:829
+msgid "Hide Product without Thumbnail"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:830
+msgid "Hide products if featured image is not existed."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:841
+msgid "Enable/Disable lightbox for the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:848
+msgid "Lightbox Overlay Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:849
+msgid "Set lightbox overlay color."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:859
+msgid "Lazy Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:860
+msgid "When enabled, it improves page load times & performance."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:867
+msgid "Zoom Effect"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:868
+msgid "Set a zoom effect on hover the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:869
+msgid ""
+"This feature lets you choose a specific zoom effect when hovering over an "
+"image for an engaging experience."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:872
+msgid "Zoom In"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:873
+msgid "Zoom Out"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:882
+msgid "Image Mode"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:883
+msgid "Set a mode for images."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:884
+msgid "Custom colors only apply to PNG files."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:886
+msgid "Original"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:887
+msgid "Grayscale and original on hover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:888
+msgid "Grayscale on hover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:889
+msgid "Always grayscale"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:890
+msgid "Custom color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:899
+msgid "Image Custom Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:900
+msgid "Set a custom color for images."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:903
+msgid "Hover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:918
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:920
+msgid "Watermark"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:919
+msgid "Enable to add watermark to the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:921
+msgid "Set watermark image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:931
+msgid "Image Protection"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:932
+msgid "Enable to protect image downloading from right-click."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:939
+msgid "Image Title Attribute"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:940
+msgid "Show/Hide image title attribute."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:952
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1067
+msgid "Post Content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:959
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1046
+msgid "Post Title"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:960
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1047
+msgid "Show/Hide post title."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:970
+msgid "Feed Content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:971
+msgid "Show/Hide feed content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:981
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1057
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1327
+msgid "Length"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:982
+msgid "Leave empty to show full feed content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:991
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1101
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1545
+msgid "Read More Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:992
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1102
+msgid "Show/Hide content read more button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1002
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1112
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1556
+msgid "Read More Button Label"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1003
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1113
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1383
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1557
+msgid "Change the read more button label text."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1011
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1121
+msgid "Set border for the readmore button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1027
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1137
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1581
+msgid "Read More Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1028
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1138
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1582
+msgid "Set color for the read more button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1058
+msgid "Leave empty to show full post title."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1068
+msgid "Show/Hide post content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1078
+msgid "Content Display Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1079
+msgid "Select a content display type."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1081
+msgid "Excerpt"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1082
+msgid "Full Content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1083
+msgid "Content with Limit"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1091
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1536
+msgid "Words Limit"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1092
+msgid "Set post content words limit. Default value is 30 words."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1140
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1584
+msgid "Label Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1155
+msgid "Meta Data"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1161
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:353
+msgid "Category"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1162
+msgid "Show/Hide post category name."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1172
+msgid "Author"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1173
+msgid "Show/Hide post author name."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1184
+msgid "Show/Hide post date."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1194
+msgid "Comment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1195
+msgid "Show/Hide post comment number."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1205
+msgid "Tag"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1206
+msgid "Show/Hide post tags."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1215
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1221
+msgid "Social Share"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1222
+msgid "Show/Hide post social share."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1232
+msgid "Icon Color Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1234
+msgid "Native"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1235
+msgid "Custom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1243
+msgid "Social Button Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1244
+msgid "Set color for the social button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1247
+msgid "Icon Hover Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1263
+msgid "Set border for the social button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1280
+msgid "Set margin for social button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1296
+msgid "Choose social icon alignment."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1309
+msgid "Product Info"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1316
+msgid "Product Name"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1317
+msgid "Show/Hide product name."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1328
+msgid "Leave empty to show full product name."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1337
+msgid "Product Price"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1338
+msgid "Show/Hide product price."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1348
+msgid "Product Description"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1349
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1525
+msgid "Choose the description display type."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1352
+msgid "Short"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1361
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1528
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:217
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:319
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:417
+msgid "Limit"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1362
+msgid "Leave empty to show full product description."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1371
+msgid "Read More"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1372
+msgid "Show/Hide product content read more button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1382
+msgid "Read More Label"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1390
+msgid "Product Rating"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1391
+msgid "Show/Hide product rating."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1401
+msgid "Rating Star Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1402
+msgid "Set color for the rating stars."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1407
+msgid "Empty Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1418
+msgid "Rating Alignment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1419
+msgid "Set alignment for the product rating star."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1433
+msgid "Add to Cart Button"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1434
+msgid "Show/Hide add to cart button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1444
+msgid "Add to Cart Border"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1445
+msgid "Set border for the add to cart button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1461
+msgid "Add to Cart Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1462
+msgid "Set color for the add to cart button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1482
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:794
+msgid "Title & Description"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1490
+msgid "Show/Hide title for the image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1500
+msgid "Title Source"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1501
+msgid "Choose a title source."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1514
+msgid "Show/Hide description for image."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1524
+msgid "Display Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1537
+msgid "Set description words limit."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1546
+msgid "Show/Hide description read more button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1565
+msgid "Set border for read more button."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1602
+msgid "Typography"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1610
+#, php-format
+msgid ""
+"The %1$sGlobal Google Fonts%2$s option must be enabled for the font-weight "
+"and family to work properly."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1615
+msgid "Load Section Title Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1616
+msgid "On/Off google font for the section title."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1622
+msgid "Section Title Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1623
+msgid "Set section title font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1647
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1711
+msgid "Load Title Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1648
+msgid "On/Off google font for the image title."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1656
+msgid "Title Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1657
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1722
+msgid "Set title font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1679
+msgid "Load Description Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1680
+msgid "On/Off google font for the image description."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1687
+msgid "Description Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1688
+msgid "Set description font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1712
+msgid "On/Off google font for the slide title."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1721
+msgid "Post Title Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1745
+msgid "Post Content Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1746
+msgid "On/Off google font for post the content."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1754
+msgid "Post Content Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1755
+msgid "Set post content font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1773
+msgid "Post Category Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1774
+msgid "On/Off google font for the post category."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1781
+msgid "Post Category Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1782
+msgid "Set post category font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1800
+msgid "Post Meta Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1801
+msgid "On/Off google font for the post meta."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1813
+msgid "Post Meta Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1814
+msgid "Set post meta font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1837
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1977
+msgid "Read More Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1838
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1978
+msgid "On/Off google font for the read more."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1846
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1990
+msgid "Read More Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1847
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1991
+msgid "Set read more font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1867
+msgid "Product Name Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1868
+msgid "On/Off google font for the product name."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1880
+msgid "Product Name Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1881
+msgid "Set product name font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1905
+msgid "Product Description Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1906
+msgid "On/Off google font for the product description."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1918
+msgid "Product Description Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1919
+msgid "Set product description font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1941
+msgid "Product Price Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1942
+msgid "On/Off google font for the product price."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1954
+msgid "Product Price Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:1955
+msgid "Set product price font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:2015
+msgid "Product Add to Cart Font Load"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:2016
+msgid "On/Off google font for the product add to cart."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:2028
+msgid "Product Add To Cart Font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/style-section.php:2029
+msgid "Set product add to cart font properties."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:27
+msgid "Live Preview"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:84
+msgid "Post"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:88
+msgid "Product"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:96
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:118
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:654
+msgid "Audio"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:104
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:629
+msgid "Mix-Content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:108
+msgid "External"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:119
+msgid "Add Audio"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:120
+msgid "Audio:"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:127
+msgid "Source"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:131
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:665
+msgid "Embed Audio"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:135
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:508
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:664
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:692
+msgid "Self Hosted"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:144
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:786
+msgid "Audio Embed Code"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:145
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:787
+msgid "SoundCloud, Spotify or any audio embed code"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:151
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:675
+msgid "Upload audio"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:153
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:673
+msgid "Upload Audio"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:154
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:580
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:597
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:610
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:676
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:737
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:750
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:762
+#: src/Admin/views/sp_framework/fields/media/media.php:56
+#: src/Admin/views/sp_framework/fields/upload/upload.php:56
+msgid "Remove"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:155
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:677
+msgid "No Audio selected"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:163
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:618
+msgid "Title & Description (optional)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:174
+msgid "Select external source type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:176
+msgid "RSS Feed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:177
+msgid "Youtube Feed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:187
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:190
+msgid "Feeds URL"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:188
+msgid ""
+"Write your feeds URL. <a href=\"https://docs.shapedplugin.com/docs/wordpress-"
+"carousel-pro/how-to-find-the-rss-feed-url-of-a-site/\" target=\"_blank\">Get "
+"help</a>"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:199
+msgid "Youtube API Key"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:200
+msgid ""
+"Write your API key. <a href=\"https://docs.shapedplugin.com/docs/wordpress-"
+"carousel-pro/configurations/how-to-get-your-youtube-api-key/\" "
+"target=\"_blank\">Get help</a>"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:208
+msgid "Youtube Channel ID"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:209
+msgid "Insert your youtube channel id"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:228
+msgid "Images"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:229
+msgid "ADD IMAGE"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:230
+msgid "EDIT IMAGE"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:231
+msgid "REMOVE ALL"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:238
+msgid "Post Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:243
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:255
+msgid "Select Post Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:252
+#: src/Admin/views/sp_framework/fields/select/select.php:98
+msgid "Multiple Post Types"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:266
+msgid "Filter Posts"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:268
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:351
+msgid "Latest"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:269
+msgid "Taxonomy"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:270
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:354
+msgid "Specific"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:279
+msgid "Select Taxonomy"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:287
+msgid "Choose Term(s)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:288
+msgid "Choose the taxonomy term(s) to show the posts from."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:296
+msgid "Select Term(s)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:304
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:402
+msgid "Operator"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:306
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:404
+msgid "IN "
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:307
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:405
+msgid "AND "
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:308
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:406
+msgid "NOT IN "
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:320
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:418
+msgid "Total number of posts to show. Leave empty to show all found posts."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:329
+msgid "Select Post(s)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:331
+msgid "Choose the posts to display. Sort the posts position by drag & drop."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:337
+msgid "Choose Posts"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:349
+msgid "Filter Products"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:352
+msgid "Featured"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:355
+#: src/Frontend/templates/loop/product-type/product-badge.php:16
+msgid "On Sale"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:364
+msgid "Select Product"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:365
+msgid ""
+"Choose the products to display. Sort the products position by drag & drop."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:375
+msgid "Choose Product"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:382
+msgid "Category Term(s)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:383
+msgid "Choose the product category term(s)."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:392
+msgid "Choose term(s)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:429
+msgid "Add Content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:431
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:439
+msgid "Slide Content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:446
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:801
+msgid "Slide Background & Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:468
+msgid "Add Video"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:469
+msgid "Video:"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:480
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:686
+msgid "YouTube"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:484
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:687
+msgid "Vimeo"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:488
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:689
+msgid "TikTok"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:492
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:690
+msgid "Twitch"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:496
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:688
+msgid "Dailymotion"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:500
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:691
+msgid "Wistia"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:504
+msgid "SproutVideo"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:516
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:701
+msgid "Twitch Embed by"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:518
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:528
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:554
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:703
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:713
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:727
+msgid "Video ID"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:519
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:541
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:704
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:720
+msgid "Channel ID"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:531
+#, php-format
+msgid "Video ID: %1$s2256213277%2$s"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:544
+#, php-format
+msgid "Channel ID: %1$sanimals_nature%2$s"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:557
+#, php-format
+msgid ""
+"The last part of the URL is the ID e.g: Youtube: %1$seKFTSSKCzWA%2$s "
+"%3$sVimeo: %1$s95746815%2$s %3$sTikTok: %1$s7290894255462108434%2$s "
+"%3$sDailymotion: %1$sx8qfynk%2$s"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:568
+msgid "Video Embed Source"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:578
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:608
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:748
+msgid "Custom Thumbnail"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:579
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:609
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:749
+msgid "Upload Image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:581
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:611
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:751
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:763
+msgid "No image selected"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:587
+msgid "Wistia Video ID"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:594
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:596
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:734
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:736
+msgid "Upload Video"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:598
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:738
+msgid "No video selected"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:630
+msgid "Add content"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:631
+msgid "Content:"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:638
+msgid "Content Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:728
+msgid ""
+"The last part of the URL is the ID e.g: //youtube.com/watch?"
+"v=<b><i>eKFTSSKCzWA</i></b> <br>//vimeo.com/<b><i>95746815</i></b>"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/generator/uploads-options.php:761
+msgid "Add Image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:28
+#: src/Admin/views/sp_framework/configs/option-config.php:35
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:54
+msgid "License Key"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:77
+msgid "Clean-up Data on Deletion"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:78
+msgid "Check to remove plugin's data when plugin is uninstalled or deleted."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:84
+msgid "Google Fonts"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:85
+#: src/Admin/views/sp_framework/configs/option-config.php:115
+#: src/Admin/views/sp_framework/configs/option-config.php:135
+#: src/Admin/views/sp_framework/configs/option-config.php:144
+#: src/Admin/views/sp_framework/configs/option-config.php:153
+#: src/Admin/views/sp_framework/configs/option-config.php:162
+#: src/Admin/views/sp_framework/configs/option-config.php:171
+#: src/Admin/views/sp_framework/configs/option-config.php:180
+#: src/Admin/views/sp_framework/configs/option-config.php:189
+#: src/Admin/views/sp_framework/configs/option-config.php:198
+msgid "Enqueued"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:86
+#: src/Admin/views/sp_framework/configs/option-config.php:116
+#: src/Admin/views/sp_framework/configs/option-config.php:136
+#: src/Admin/views/sp_framework/configs/option-config.php:145
+#: src/Admin/views/sp_framework/configs/option-config.php:154
+#: src/Admin/views/sp_framework/configs/option-config.php:163
+#: src/Admin/views/sp_framework/configs/option-config.php:172
+#: src/Admin/views/sp_framework/configs/option-config.php:181
+#: src/Admin/views/sp_framework/configs/option-config.php:190
+#: src/Admin/views/sp_framework/configs/option-config.php:199
+msgid "Dequeued"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:93
+msgid "Cache"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:96
+msgid "Normally cache gets cleared after 24 hours."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:107
+msgid "Clean Cache"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:113
+msgid "Load Carousel Assets Globally"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:114
+msgid ""
+"Enable this option to make compatible the carousel with Ajax-based theme."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:134
+msgid "Swiper CSS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:143
+msgid "bxSlider CSS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:152
+msgid "Font Awesome CSS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:161
+msgid "FancyBox Popup CSS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:170
+msgid "Animate CSS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:179
+msgid "Swiper JS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:188
+msgid "bxSlider JS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:197
+msgid "FancyBox Popup JS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:211
+msgid "Watermark Settings"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:216
+msgid "Watermark Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:219
+msgid "Logo"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:220
+msgid "Text"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:227
+msgid "Watermark Label"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:228
+msgid ""
+"Text Watermark depends on PHP imagick module. It will work perfectly if "
+"server has PHP imagick module."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:235
+msgid "Text Font Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:244
+msgid "Text Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:251
+msgid "Watermark Image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:263
+#: src/Admin/views/sp_framework/fields/background/background.php:219
+msgid "Left Top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:264
+#: src/Admin/views/sp_framework/fields/background/background.php:220
+msgid "Left Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:265
+#: src/Admin/views/sp_framework/fields/background/background.php:221
+msgid "Left Bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:266
+msgid "Right top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:267
+#: src/Admin/views/sp_framework/fields/background/background.php:226
+msgid "Right Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:268
+#: src/Admin/views/sp_framework/fields/background/background.php:227
+msgid "Right Bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:269
+#: src/Admin/views/sp_framework/fields/background/background.php:224
+msgid "Center Bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:270
+#: src/Admin/views/sp_framework/fields/background/background.php:223
+msgid "Center Center"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:271
+#: src/Admin/views/sp_framework/fields/background/background.php:222
+msgid "Center Top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:294
+msgid "Opacity"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:305
+msgid "Set watermark custom size related to image (horizontally/vertically)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:335
+msgid "Image Quality"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:347
+msgid "Purge Watermark Cache"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:348
+msgid ""
+"Purging or clearing cached watermarked images will ensure to display the "
+"recent changes of watermark configurations."
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:350
+msgid "Clean"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:361
+msgid "Responsive Breakpoints"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:367
+msgid "Minimum Screen Width"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:392
+msgid "Custom CSS & JS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:398
+msgid "Custom CSS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/option-config.php:407
+msgid "Custom JS"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:29
+#: src/Admin/views/sp_framework/configs/tools-config.php:42
+msgid "Tools"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:49
+#: src/Admin/views/sp_framework/configs/tools-config.php:85
+msgid "Export"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:55
+msgid "Choose What To Export"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:58
+msgid "All Carousels (Shortcodes)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:59
+msgid "Selected Carousel (Shortcode)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:72
+msgid "Choose shortcode(s)"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:94
+msgid "Import"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:99
+msgid "Allow Iframe/Script Tags"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:100
+msgid ""
+"Enabling this option, you are allowing to import the carousel which contains "
+"iframe, script or embed tags"
+msgstr ""
+
+#: src/Admin/views/sp_framework/configs/tools-config.php:106
+msgid "Import JSON File To Upload"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:67
+#: src/Admin/views/sp_framework/fields/media/media.php:90
+msgid "Not selected"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:108
+msgid "From"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:131
+msgid "To"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:154
+msgid "Direction"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:161
+msgid "Gradient Direction"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:162
+msgid "&#8659; top to bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:163
+msgid "&#8658; left to right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:164
+msgid "&#8664; corner top to right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:165
+msgid "&#8665; corner top to left"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:218
+msgid "Background Position"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:225
+msgid "Right Top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:244
+msgid "Background Repeat"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:245
+msgid "Repeat"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:246
+msgid "No Repeat"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:247
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:248
+msgid "Repeat Vertically"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:266
+msgid "Background Attachment"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:267
+msgid "Scroll"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:268
+msgid "Fixed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:285
+msgid "Background Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:286
+msgid "Cover"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:287
+msgid "Contain"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:306
+msgid "Background Origin"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:307
+#: src/Admin/views/sp_framework/fields/background/background.php:329
+msgid "Padding Box"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:308
+#: src/Admin/views/sp_framework/fields/background/background.php:328
+msgid "Border Box"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:327
+msgid "Background Clip"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:348
+msgid "Background Blend Mode"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:349
+#: src/Admin/views/sp_framework/fields/typography/typography.php:249
+msgid "Normal"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:350
+msgid "Multiply"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:351
+msgid "Screen"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:353
+msgid "Darken"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:354
+msgid "Lighten"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:355
+msgid "Color Dodge"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:356
+msgid "Saturation"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/background/background.php:358
+msgid "Luminosity"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:40
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:54
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:61
+msgid "top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:41
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:55
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:62
+msgid "right"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:42
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:56
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:63
+msgid "bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:43
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:57
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:64
+msgid "left"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:44
+#: src/Admin/views/sp_framework/fields/column/column.php:57
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:58
+#: src/Admin/views/sp_framework/fields/spacing/spacing.php:65
+msgid "all"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:73
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:90
+#: src/Admin/views/sp_framework/fields/typography/typography.php:290
+msgid "Dashed"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:74
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:91
+#: src/Admin/views/sp_framework/fields/typography/typography.php:289
+msgid "Dotted"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:75
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:92
+#: src/Admin/views/sp_framework/fields/typography/typography.php:288
+msgid "Double"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:78
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:95
+msgid "Groove"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/border/border.php:79
+#: src/Admin/views/sp_framework/fields/dimensions_advanced/dimensions_advanced.php:96
+msgid "ridge"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:47
+msgid "X offset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:48
+msgid "Y offset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:49
+msgid "Blur"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:50
+msgid "Spread"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:51
+msgid "h-offset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:52
+msgid "v-offset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:53
+msgid "blur"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:54
+msgid "spread"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/box_shadow/box_shadow.php:105
+msgid "Type"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/button_clean/button_clean.php:75
+msgid "Are you sure to clean cache?"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/column/column.php:52
+msgid "Large Desktop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/column/column.php:53
+msgid "Desktop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/column/column.php:54
+msgid "Small Desktop"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/column/column.php:55
+msgid "Tablet"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/column/column.php:56
+msgid "Mobile"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/datetime/datetime.php:52
+msgid "Start date"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/datetime/datetime.php:53
+msgid "End date"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/gallery/gallery.php:105
+msgid "Add Gallery"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/gallery/gallery.php:106
+msgid "Edit Gallery"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/gallery/gallery.php:107
+msgid "Clear"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/group/group.php:55
+#: src/Includes/Register_Post_Type.php:63
+msgid "Add New"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/group/group.php:68
+msgid "Error: Field ID conflict."
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/group/group.php:79
+#: src/Admin/views/sp_framework/fields/group/group.php:119
+msgid "Are you sure to delete this item?"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/group/group.php:150
+msgid "You cannot add more."
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/group/group.php:151
+msgid "You cannot remove more."
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/image_sizes/image_sizes.php:83
+msgid "Original uploaded image"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/image_sizes/image_sizes.php:84
+msgid "Set custom size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/image_sizes/image_sizes.php:131
+msgid "No Dimensionss found."
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/license/license.php:62
+msgid "WP Carousel Pro License Key"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/license/license.php:65
+msgid "Active"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/license/license.php:66
+msgid "Your license key is active."
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/license/license.php:76
+msgid "Deactivate"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/license/license.php:78
+#: src/Admin/views/sp_framework/fields/license/license.php:79
+msgid "Activate"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/media/media.php:55
+#: src/Admin/views/sp_framework/fields/upload/upload.php:55
+msgid "Upload"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/switcher/switcher.php:48
+msgid "On"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/switcher/switcher.php:49
+msgid "Off"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:145
+msgid "Font Family"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:147
+msgid "Select a font"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:154
+msgid "Backup Font Family"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:175
+#: src/Admin/views/sp_framework/fields/typography/typography.php:187
+#: src/Admin/views/sp_framework/fields/typography/typography.php:200
+#: src/Admin/views/sp_framework/fields/typography/typography.php:216
+#: src/Admin/views/sp_framework/fields/typography/typography.php:236
+#: src/Admin/views/sp_framework/fields/typography/typography.php:254
+#: src/Admin/views/sp_framework/fields/typography/typography.php:273
+#: src/Admin/views/sp_framework/fields/typography/typography.php:296
+msgid "Default"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:185
+msgid "Font Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:199
+#: src/Admin/views/sp_framework/fields/typography/typography.php:200
+msgid "Load Extra Styles"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:213
+msgid "Subset"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:224
+msgid "Text Align"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:228
+msgid "Inherit"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:232
+msgid "Justify"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:233
+msgid "Initial"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:245
+msgid "Font Variant"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:250
+msgid "Small Caps"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:251
+msgid "All Small Caps"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:263
+msgid "Text Transform"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:268
+msgid "Capitalize"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:269
+msgid "Uppercase"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:270
+msgid "Lowercase"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:282
+msgid "Text Decoration"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:291
+msgid "Wavy"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:292
+msgid "Overline"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:293
+msgid "Line-through"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:309
+msgid "Font Size"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:321
+msgid "Line Height"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:333
+msgid "Letter Spacing"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:345
+msgid "Word Spacing"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:360
+msgid "Font Color"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:370
+msgid "Margin Top"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:382
+msgid "Margin Bottom"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:406
+msgid "Custom Style"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:485
+msgid "Custom Web Fonts"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:491
+msgid "Safe Web Fonts"
+msgstr ""
+
+#: src/Admin/views/sp_framework/fields/typography/typography.php:514
+msgid "Google Web Fonts"
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/actions.php:27
+#: src/Admin/views/sp_framework/functions/actions.php:92
+msgid "Error: Invalid nonce verification."
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/actions.php:34
+msgid "Error: Invalid term ID."
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/actions.php:40
+msgid "Error: You do not have permission to do that."
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/validate.php:29
+#: src/Admin/views/sp_framework/functions/validate.php:101
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/validate.php:46
+#: src/Admin/views/sp_framework/functions/validate.php:123
+msgid "Please enter a valid number."
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/validate.php:63
+#: src/Admin/views/sp_framework/functions/validate.php:145
+msgid "This field is required."
+msgstr ""
+
+#: src/Admin/views/sp_framework/functions/validate.php:81
+#: src/Admin/views/sp_framework/functions/validate.php:167
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: src/Frontend/Helper.php:250
+msgid "Watermark image's url is wrong"
+msgstr ""
+
+#: src/Frontend/Helper.php:506
+msgid "End Of the Content"
+msgstr ""
+
+#: src/Frontend/Helper.php:1098
+msgid "No posts found"
+msgstr ""
+
+#: src/Frontend/Helper.php:1134
+msgid "No products found"
+msgstr ""
+
+#: src/Frontend/Helper.php:1258
+msgid "Y/m/d H:i"
+msgstr ""
+
+#: src/Frontend/Helper.php:1266
+msgid "This is scheduling shortcode"
+msgstr ""
+
+#: src/Frontend/Helper.php:1276
+msgid ""
+"This carousel is password protected. To view it please enter your password "
+"below:"
+msgstr ""
+
+#: src/Frontend/Helper.php:1276
+msgid "Enter"
+msgstr ""
+
+#: src/Frontend/templates/loop/external-type/feeds.php:97
+#: src/Frontend/templates/loop/external-type/feeds.php:104
+#, php-format
+msgid "Posted %s"
+msgstr ""
+
+#: src/Frontend/templates/loop/post-type/meta.php:18
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: src/Frontend/templates/loop/post-type/meta.php:36
+msgid " By "
+msgstr ""
+
+#: src/Frontend/templates/loop/post-type/meta.php:41
+msgid " On "
+msgstr ""
+
+#: src/Frontend/templates/loop/post-type/meta.php:61
+msgid "0 comment"
+msgstr ""
+
+#: src/Frontend/templates/loop/post-type/meta.php:63
+msgid "1 comment"
+msgstr ""
+
+#: src/Frontend/templates/loop/post-type/meta.php:65
+msgid " comments"
+msgstr ""
+
+#: src/Frontend/templates/loop/product-type/product-badge.php:20
+msgid "Stock Out"
+msgstr ""
+
+#: src/Frontend/templates/loop/product-type/ratting.php:20
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:17
+#: src/Frontend/templates/pagination.php:29
+msgid "contents"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:20
+msgid "images"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:23
+msgid "videos"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:26
+msgid "audio"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:32
+msgid "feeds"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:37
+msgid "posts"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:37
+msgid "products"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:41
+msgid "You have viewed"
+msgstr ""
+
+#: src/Frontend/templates/pagination.php:41
+msgid "of"
+msgstr ""
+
+#: src/Frontend/templates/preloader.php:15
+msgid "Preloader image"
+msgstr ""
+
+#: src/Includes/Auto_Update.php:306
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: src/Includes/Auto_Update.php:315
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: src/Includes/Auto_Update.php:525
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: src/Includes/Auto_Update.php:525
+msgid "Error"
+msgstr ""
+
+#: src/Includes/Import_Export.php:259
+msgid "Nothing to import."
+msgstr ""
+
+#: src/Includes/License.php:293 src/Includes/License.php:330
+#: src/Includes/License.php:406
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: src/Includes/License.php:305
+#, php-format
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: src/Includes/License.php:310
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: src/Includes/License.php:313
+msgid "Invalid license."
+msgstr ""
+
+#: src/Includes/License.php:317
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: src/Includes/License.php:322
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: src/Includes/License.php:327
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: src/Includes/License.php:454
+#, php-format
+msgid ""
+"Your <strong>WP Carousel Pro</strong> license key has been expired. Please "
+"<a href=\"%1$s\" target=\"_blank\">renew license key</a> at discount."
+msgstr ""
+
+#: src/Includes/License.php:460
+#, php-format
+msgid ""
+"<div class=\"wp-carousel-pro-license-notice notice\"><div class=\"wp-"
+"carousel-pro-notice-icon\"><p>You must activate the license key to make the "
+"<strong><a href=\"%1$s\" target=\"_blank\">WP Carousel Pro</a></strong> "
+"plugin work, get automatic updates & support.</p><a href=\"%2$s\" class=\"wp-"
+"carousel-pro-activate-btn\">Activate</a></div></div>"
+msgstr ""
+
+#: src/Includes/License.php:567
+msgid "Enter valid license key for automatic updates."
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:61
+#: src/Includes/Register_Post_Type.php:73
+msgid "All Carousels"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:62
+#: src/Includes/Register_Post_Type.php:72
+msgid "WP Carousel"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:64
+msgid "Add New Carousel"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:65
+msgid "Edit Carousel"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:66
+msgid "New Carousel"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:67
+msgid "View Carousel"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:68
+msgid "Search Carousels"
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:69
+msgid "No Carousels found."
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:70
+msgid "No Carousels found in trash."
+msgstr ""
+
+#: src/Includes/Register_Post_Type.php:71
+msgid "Parent Item:"
+msgstr ""

@@ -1,0 +1,601 @@
+/* ============================================
+   SPD Contracting, Inc. - Homepage (archivo en proyecto)
+   ============================================ */
+
+:root {
+  --color-dark: #0d1b2a;
+  --color-dark-blue: #1b263b;
+  --color-navy: #1e3a5f;
+  --color-accent: #e07c24;
+  --color-accent-hover: #c96a1a;
+  --color-white: #ffffff;
+  --color-gray: #4a5568;
+  --color-gray-light: #718096;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --container-max: 1200px;
+  --header-height: 72px;
+}
+
+/* Solo aplica a la plantilla "Homepage (HTML/CSS en proyecto)" */
+body.custom-homepage *,
+body.custom-homepage *::before,
+body.custom-homepage *::after {
+  box-sizing: border-box;
+}
+
+body.custom-homepage {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.custom-homepage img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body.custom-homepage a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.custom-homepage ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+body.custom-homepage .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========== Header ========== */
+body.custom-homepage .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: var(--color-dark);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+body.custom-homepage .header-inner {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.custom-homepage .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+body.custom-homepage .logo-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  display: block;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+body.custom-homepage .main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+body.custom-homepage .main-nav a {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+body.custom-homepage .main-nav a:hover {
+  color: var(--color-accent);
+}
+
+body.custom-homepage .chevron {
+  font-size: 0.65em;
+  opacity: 0.8;
+}
+
+/* ========== Buttons ========== */
+body.custom-homepage .btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+body.custom-homepage .btn:hover {
+  transform: translateY(-1px);
+}
+
+body.custom-homepage .btn-primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+body.custom-homepage .btn-primary:hover {
+  background: var(--color-accent-hover);
+}
+
+body.custom-homepage .btn-dark {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+body.custom-homepage .btn-dark:hover {
+  background: var(--color-dark-blue);
+}
+
+/* ========== Hero ========== */
+body.custom-homepage .hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-navy) url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920') center/cover no-repeat;
+  margin-top: var(--header-height);
+}
+
+body.custom-homepage .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(27, 38, 59, 0.75);
+}
+
+body.custom-homepage .hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+body.custom-homepage .hero-title {
+  margin: 0 0 8px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
+}
+
+body.custom-homepage .hero-subtitle {
+  margin: 0 0 40px;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 500;
+  color: var(--color-white);
+  opacity: 0.95;
+}
+
+body.custom-homepage .hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* ========== Section label ========== */
+body.custom-homepage .section-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gray);
+  margin: 0 0 16px;
+}
+
+/* ========== Approach & Expertise ========== */
+body.custom-homepage .approach {
+  padding: 80px 0 100px;
+  background: var(--color-white);
+}
+
+body.custom-homepage .approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 56px;
+}
+
+@media (max-width: 768px) {
+  body.custom-homepage .approach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.custom-homepage .approach-headline h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.3;
+}
+
+body.custom-homepage .approach-text p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+}
+
+body.custom-homepage .metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body.custom-homepage .metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.custom-homepage .metric-number {
+  display: block;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+body.custom-homepage .metric-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-dark);
+}
+
+body.custom-homepage .partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+body.custom-homepage .partner-logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gray-light);
+  padding: 12px 20px;
+  background: #f7fafc;
+  border-radius: 6px;
+}
+
+/* ========== Featured Projects ========== */
+body.custom-homepage .featured-projects {
+  padding: 80px 0 100px;
+  background: var(--color-accent);
+}
+
+body.custom-homepage .featured-projects .section-label {
+  color: var(--color-gray);
+}
+
+body.custom-homepage .projects-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+body.custom-homepage .projects-text-box {
+  flex: 1;
+  min-width: 280px;
+  max-width: 640px;
+  background: var(--color-white);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.custom-homepage .projects-title {
+  margin: 0 0 16px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+body.custom-homepage .projects-text-box p {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  color: var(--color-gray);
+}
+
+body.custom-homepage .projects-text-box p:last-of-type {
+  margin-bottom: 0;
+}
+
+body.custom-homepage .projects-intro .btn-dark {
+  align-self: center;
+}
+
+body.custom-homepage .projects-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+body.custom-homepage .carousel-arrow {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+body.custom-homepage .carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body.custom-homepage .projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  body.custom-homepage .projects-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.custom-homepage .project-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.custom-homepage .project-image {
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+}
+
+body.custom-homepage .project-caption {
+  padding: 20px;
+}
+
+body.custom-homepage .project-category {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-light);
+  margin-bottom: 8px;
+}
+
+body.custom-homepage .project-caption h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.4;
+}
+
+/* ========== Services ========== */
+body.custom-homepage .services {
+  padding: 80px 0 100px;
+  background: var(--color-white);
+}
+
+body.custom-homepage .services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  body.custom-homepage .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.custom-homepage .services-intro p {
+  margin: 0 0 24px;
+  font-size: 1rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+}
+
+body.custom-homepage .services-intro .btn {
+  margin-top: 8px;
+}
+
+body.custom-homepage .service-feature {
+  padding: 0;
+}
+
+body.custom-homepage .service-image {
+  aspect-ratio: 16/10;
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+body.custom-homepage .service-feature h3 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+body.custom-homepage .service-feature p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+/* ========== CTA Section ========== */
+body.custom-homepage .cta-section {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-navy) url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920') center/cover no-repeat;
+}
+
+body.custom-homepage .cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(27, 38, 59, 0.8);
+}
+
+body.custom-homepage .cta-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+body.custom-homepage .cta-text {
+  margin: 0 0 28px;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--color-white);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== Footer ========== */
+body.custom-homepage .site-footer {
+  background: var(--color-dark-blue);
+  color: var(--color-white);
+  padding: 48px 0 32px;
+}
+
+body.custom-homepage .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.custom-homepage .footer-top .logo-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+body.custom-homepage .footer-nav {
+  display: flex;
+  gap: 24px;
+}
+
+body.custom-homepage .footer-nav a {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+body.custom-homepage .footer-nav a:hover {
+  color: var(--color-accent);
+}
+
+body.custom-homepage .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+body.custom-homepage .copyright {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+body.custom-homepage .footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+body.custom-homepage .footer-contact a {
+  color: var(--color-white);
+}
+
+body.custom-homepage .footer-contact a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+  body.custom-homepage .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body.custom-homepage .footer-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

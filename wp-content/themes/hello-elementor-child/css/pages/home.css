@@ -1,0 +1,11 @@
+/*
+ * CSS solo para la página con slug "home" (página de inicio).
+ * Si tu inicio tiene otro slug, renombra este archivo o crea uno nuevo
+ * con el slug correcto (ej: inicio.css si el slug es "inicio").
+ */
+
+/* Ejemplo: estilos solo en la home
+.page .elementor-section:first-of-type .elementor-heading-title {
+  font-size: 2.5rem;
+}
+*/
