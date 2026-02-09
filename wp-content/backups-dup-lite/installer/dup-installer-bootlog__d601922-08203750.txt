@@ -1,30 +1,35 @@
-[Feb 8 21:11:26] 
-[Feb 8 21:11:26] ==DUPLICATOR INSTALLER BOOTSTRAP v1.5.15==
-[Feb 8 21:11:26] ----------------------------------------------------
-[Feb 8 21:11:26] Installer bootstrap start
-[Feb 8 21:11:26] Manual extract found so not going to extract dup-installer dir
-[Feb 8 21:11:26] EXTRACT dup-installer dir
-[Feb 8 21:11:26] NOTICE: Didn't need to extract the installer.
-[Feb 8 21:11:26] [PHP ERR][ISSUE] MSG:Creation of dynamic property DUPX_Bootstrap::$archive is deprecated [CODE:8192|FILE:/var/www/html/20260208_spdcontractinginc_[HASH]_20260208203750_installer-backup.php|LINE:530]
-[Feb 8 21:11:26] [PHP ERR][ISSUE] MSG:Creation of dynamic property DUPX_Bootstrap::$bootloader is deprecated [CODE:8192|FILE:/var/www/html/20260208_spdcontractinginc_[HASH]_20260208203750_installer-backup.php|LINE:531]
-[Feb 8 21:11:26] Set permissions of dup-installer<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/addons<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/assets<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/classes<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/ctrls<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/favicon<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/libs<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/original_files_[HASH]<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/src<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/templates<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/vendor<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/dup-archive__[HASH].txt<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/dup-database__[HASH].sql<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/dup-manual-extract__[HASH]<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/dup-scan__[HASH].json<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/dup-scanned-dirs__[HASH].txt<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/dup-scanned-files__[HASH].txt<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/index.php<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/main.installer.php<br/>
-[Feb 8 21:11:26] Set permissions of dup-installer/php_error__[HASH].log<br/>
-[Feb 8 21:11:26] DONE: No detected errors so redirecting to the main installer. Main Installer URI = http://localhost:8080/dup-installer/main.installer.php
+[Feb 9 00:11:59] 
+[Feb 9 00:11:59] ==DUPLICATOR INSTALLER BOOTSTRAP v1.5.15==
+[Feb 9 00:11:59] ----------------------------------------------------
+[Feb 9 00:11:59] Installer bootstrap start
+[Feb 9 00:11:59] Manual extract found so not going to extract dup-installer dir
+[Feb 9 00:11:59] EXTRACT dup-installer dir
+[Feb 9 00:11:59] Successfully deleted the file /var/www/html/dup-installer/dup-installer-log__[HASH].txt
+[Feb 9 00:11:59] NOTICE: Didn't need to extract the installer.
+[Feb 9 00:11:59] [PHP ERR][ISSUE] MSG:Creation of dynamic property DUPX_Bootstrap::$archive is deprecated [CODE:8192|FILE:/var/www/html/20260208_spdcontractinginc_[HASH]_20260208203750_installer-backup.php|LINE:530]
+[Feb 9 00:11:59] [PHP ERR][ISSUE] MSG:Creation of dynamic property DUPX_Bootstrap::$bootloader is deprecated [CODE:8192|FILE:/var/www/html/20260208_spdcontractinginc_[HASH]_20260208203750_installer-backup.php|LINE:531]
+[Feb 9 00:11:59] Set permissions of dup-installer<br/>
+[Feb 9 00:11:59] Set permissions of dup-installer/addons<br/>
+[Feb 9 00:11:59] Set permissions of dup-installer/assets<br/>
+[Feb 9 00:11:59] Set permissions of dup-installer/classes<br/>
+[Feb 9 00:11:59] Set permissions of dup-installer/ctrls<br/>
+[Feb 9 00:11:59] Set permissions of dup-installer/favicon<br/>
+[Feb 9 00:11:59] Set permissions of dup-installer/libs<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/original_files_[HASH]<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/src<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/templates<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/vendor<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-archive__[HASH].txt<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-database__[HASH].sql<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-installer-csrf__[HASH].txt<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-installer-extraction__[HASH].json<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-installer-log__.txt<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-installer-notices__[HASH].json<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-params__[HASH].json<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-scan__[HASH].json<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-scanned-dirs__[HASH].txt<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/dup-scanned-files__[HASH].txt<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/index.php<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/main.installer.php<br/>
+[Feb 9 00:12:00] Set permissions of dup-installer/php_error__[HASH].log<br/>
+[Feb 9 00:12:00] DONE: No detected errors so redirecting to the main installer. Main Installer URI = http://localhost:8080/dup-installer/main.installer.php

@@ -1,4 +1,6 @@
 <?php
+define( 'WP_CACHE', true );
+
 /**
  * The base configuration for WordPress
  *
@@ -13,56 +15,29 @@
  * * Database table prefix
  * * ABSPATH
  *
- * This has been slightly modified (to read environment variables) for use in Docker.
- *
  * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/
  *
  * @package WordPress
  */
 
-// IMPORTANT: this file needs to stay in-sync with https://github.com/WordPress/WordPress/blob/master/wp-config-sample.php
-// (it gets parsed by the upstream wizard in https://github.com/WordPress/WordPress/blob/f27cb65e1ef25d11b535695a660e7282b98eb742/wp-admin/setup-config.php#L356-L392)
-
-// a helper function to lookup "env_FILE", "env", then fallback
-if (!function_exists('getenv_docker')) {
-	// https://github.com/docker-library/wordpress/issues/588 (WP-CLI will load this file 2x)
-	function getenv_docker($env, $default) {
-		if ($fileEnv = getenv($env . '_FILE')) {
-			return rtrim(file_get_contents($fileEnv), "\r\n");
-		}
-		else if (($val = getenv($env)) !== false) {
-			return $val;
-		}
-		else {
-			return $default;
-		}
-	}
-}
-
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
+define( 'DB_NAME', "wordpress" );
 
 /** Database username */
-define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'example username') );
+define( 'DB_USER', "wordpress" );
 
 /** Database password */
-define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password') );
-
-/**
- * Docker image fallback values above are sourced from the official WordPress installation wizard:
- * https://github.com/WordPress/WordPress/blob/1356f6537220ffdc32b9dad2a6cdbe2d010b7a88/wp-admin/setup-config.php#L224-L238
- * (However, using "example username" and "example password" in your database is strongly discouraged.  Please use strong, random credentials!)
- */
+define( 'DB_PASSWORD', "wordpress" );
 
 /** Database hostname */
-define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql') );
+define( 'DB_HOST', "db" );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8mb4') );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
+define( 'DB_COLLATE', '' );
 
 /**#@+
  * Authentication unique keys and salts.
@@ -75,15 +50,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '91ad79cf48b119494a4389dc2ff00319c6ab1461') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '60f4139d72e20335ceca2376efb6366f788cabd9') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '84d03e34ae8a286ff9d88f35fbf3c5fe6791fc0c') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '9284c2fea2ceada19a40096e88839d30dce7edda') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '3934202afa3d6317d095439235bfa4ab033f7cd3') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '47c6c4e9da47f58f8f94f802705f8dfb7b5c8c3f') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   'df36ec6e3551fd58fb04fa740c5fc1dd26786d1a') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '4427270c5f95dc31bd1d81ba5381fdfa6cc46f6a') );
-// (See also https://wordpress.stackexchange.com/a/152905/199287)
+define( 'AUTH_KEY',         'h4tx7dbz6kwlzoeiueydjfy69bab9qusxhjqcgz9z4h1bbbbyahtw4ugijzt1sho' );
+define( 'SECURE_AUTH_KEY',  'erhfjdhgsdrrlroam5xmyefjiellpaxxvxhphevy4qimiz9zrs07mkh655dedrfz' );
+define( 'LOGGED_IN_KEY',    'sn75yuzxucaitzn3as1lygeqcnypdc1yp7hbrbhehaqjuvuytkrwjh2grgexqdot' );
+define( 'NONCE_KEY',        'davnzbzgoufasbkytgurocp9valooaa9tt9ztqywuha7smu7mbjdndhcagcn364u' );
+define( 'AUTH_SALT',        'vuzptrsy6gzrqao5a9kjaiz9dpqlqnkns8dnzsvtcqke0gqmawo226mg958itb4c' );
+define( 'SECURE_AUTH_SALT', 'm5omdtb7xcjxvaoruehzb5qw6rtqflispfsmmcdbp5xshqcks2zhoxcpkkepscih' );
+define( 'LOGGED_IN_SALT',   'dv2lx3r56f7jbovijre8x6ev6msw15vyfllkzrrc7ykndkaynss2i2a0trcldbrj' );
+define( 'NONCE_SALT',       'bvflbi7swrngc9skbw79qzzfl7sa8c5nn8z9krdjaq3lkdktxivyzqs8pd8gnhwb' );
 
 /**#@-*/
 
@@ -99,7 +73,7 @@ define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '4427270
  *
  * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/#table-prefix
  */
-$table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -113,21 +87,14 @@ $table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', !!getenv_docker('WORDPRESS_DEBUG', '') );
+define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-// If we're behind a proxy server and using HTTPS, we need to alert WordPress of that fact
-// see also https://wordpress.org/support/article/administration-over-ssl/#using-a-reverse-proxy
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
-	$_SERVER['HTTPS'] = 'on';
-}
-// (we include this by default because reverse proxying is extremely common in container environments)
 
-if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
-	eval($configExtra);
-}
 
+define('CDN_SITE_ID', '219287');
+define('CDN_SITE_TOKEN', 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NjM0MjE2NjMsIm5iZiI6MTc2MzQyMTY2MywiZXhwIjoyMDc4NzgxNjYzLCJpZGVudGl0eSI6eyJzdWIiOiJqd3Rfb25seTpjYWNoZV9wdXJnZTowIiwicm9ja2V0X2NsYWltcyI6eyJyb2xlcyI6WyJyb2xlOnNpdGVfY2FjaGVfcHVyZ2UiXSwiYWNjb3VudF91c2VyX2lkIjowLCJsb2dpbl9lbWFpbCI6ImNhY2hlX3B1cmdlIiwibG9naW5fdXNlcl9pZCI6MCwidXNlcl90eXBlIjoiand0X29ubHkiLCJyZXNvdXJjZV9jbGFpbXMiOlsid21faW5zdGFsbDoyMTkyODciXX19LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.HAdDkkC9MwK_QPKE2UemTjbh_MiO_LxUTlXPygL2jYJYBwaLlhtedm_0tHadUMMe-3s9bK0qr_7s-HunQ8_nbFPeqT3lhEsZiU21MHibVwZztatE-GHRhHkTPR0sD5oqy4WA9jsvuRtJbf3I9NmMwrJCO0K0DKBolddZkWLSyqWcV-WuIZHdhUpyO1zB07nNqVePNEgJXiXyATiZrTih9qivFme9ly7N_LdcMtRfpeMsy17XfdTvgwOaNJ7L52h4Op3Wb24y2gMK0QS1YxkvosnsAtVPtEUCI8Dqii1u5ZoQae6Sj_fbIN-Hv40ODWORIhhFkuJRstS53OAoKzLsSHJeH5pQht5eQL51BojhSHw60AB1b0qgako57ODQoqXRTYWJmpVHcIKiscSjugasgr7db0AEshi6npp9DALGSVucaaBSN9Vn9VgzqwSNgQZUeCIbthTQHYdnfmkiWTOf3ZmH3ojo77x6uDiyPksz1DVsxog9sUusaWFuC8W4BsK9CNBey0qM1cnLfdKzJ8BjmZk43T_pwT3dU4GZWAaECf15UpTwwzpk1cFkhDwRKObjLebRgiIIIeNUzkfDOcm58cgHlzMq8NT0TAXapJpMTcPymkru6tW187RbQ1D-ZdC_A4SFIFcWi5lVmtE0e4o2WeyhKYJa0EYzshiQGmlEdcI');
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

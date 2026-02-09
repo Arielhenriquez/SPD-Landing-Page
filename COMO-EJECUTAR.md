@@ -20,7 +20,7 @@ Por defecto el sitio quedará en **http://localhost:8080**.
 
 ### 2. Levantar los contenedores
 
-En la carpeta del proyecto (donde está `docker-compose.yml`):
+En la carpeta del proyecto (donde está `docker-compose.yml`). Puedes tener la carpeta con cualquier nombre (por ejemplo **"SPD Landing page"**); el nombre de la carpeta no afecta las URLs del sitio ni del instalador.
 
 ```bash
 docker compose up -d
@@ -28,7 +28,15 @@ docker compose up -d
 
 Espera unos segundos a que MariaDB esté listo.
 
-### 3. Abrir el instalador de Duplicator (¡importante!)
+**Si en los logs ves** *"WordPress not found in /var/www/html - copying now..."*: la imagen de WordPress copia archivos por defecto cuando no detecta una instalación. Eso suele pasar si ejecutaste `docker compose` desde otra carpeta o si el volumen no montó bien. Asegúrate de estar dentro de la carpeta del proyecto (donde están `wp-config.php` y `docker-compose.yml`) al ejecutar `docker compose up -d`. Luego reinicia con `docker compose down` y `docker compose up -d` desde esa carpeta.
+
+### 3. Si ves la pantalla "Welcome" de WordPress (instalación en 5 minutos)
+
+**No completes esa instalación.** Esa pantalla sale porque la base de datos está vacía. Tu sitio (páginas, temas, contenido) está en los archivos; solo falta **restaurar la base de datos** con el instalador de Duplicator. Si instalas desde esa pantalla, crearías un sitio nuevo y vacío.
+
+Sigue el paso 5 para abrir el instalador de Duplicator y restaurar tu sitio.
+
+### 5. Abrir el instalador de Duplicator (¡importante!)
 
 **No abras** `main.installer.php` directamente; primero debes abrir el instalador de entrada para que se cree el archivo de seguridad (CSRF).
 
@@ -38,9 +46,17 @@ En el navegador entra a:
 
 (Si cambiaste el puerto en `.env`, usa ese número en lugar de 8080.)
 
-Esa página creará el archivo necesario y te llevará al asistente. Si ves un error "CSRF FILE NOT FOUND", es porque se abrió `dup-installer/main.installer.php` sin pasar antes por la URL de arriba.
+**Si esa URL te manda al instalador de WordPress** (pantalla "Welcome" / `wp-admin/install.php`) **o da 404:** es que en la raíz del proyecto **no está** el archivo `20260208_spdcontractinginc_27c8ba10e49c5b772531_20260208203750_installer-backup.php`. Sin ese archivo no se puede usar el asistente de Duplicator.
 
-### 4. Completar el asistente de Duplicator
+- **Dónde conseguirlo:** ese archivo viene en el **paquete original** del backup de Duplicator. Al crear el backup, Duplicator genera (además del .zip o .daf) un archivo PHP con un nombre largo que termina en `_installer-backup.php`. Debes tener ese archivo en la **misma carpeta** que `wp-config.php` (raíz del proyecto).
+- **Dónde buscarlo:** en la carpeta o ZIP donde descargaste o extrajiste el respaldo (por ejemplo la carpeta que antes se llamaba `20260208_spdcontractinginc_27c8ba10e49c5b772531_20260208203750_archive`, o el ZIP original de Duplicator). Copia **solo** el archivo `..._installer-backup.php` a la raíz de **"SPD Landing page"** (donde está `docker-compose.yml`).
+- **Si ya no tienes el paquete:** tendrías que volver a generar un backup con Duplicator desde el sitio original (si aún existe) o usar una copia de la base de datos que tengas guardada (importación manual en MariaDB).
+
+**Nota:** La URL del instalador depende del *nombre de ese archivo .php*, no del nombre de la carpeta del proyecto. Aunque hayas renombrado la carpeta a **SPD Landing page**, la URL sigue siendo la de arriba.
+
+Cuando el archivo esté en la raíz, al abrir esa URL se creará el archivo de seguridad y entrarás al asistente de Duplicator. Si ves un error "CSRF FILE NOT FOUND", es porque se abrió `dup-installer/main.installer.php` sin pasar antes por la URL de arriba.
+
+### 6. Completar el asistente de Duplicator
 
 - **Paso 1 – Base de datos:** usa estos datos (son los del contenedor):
   - **Host:** `db` (nombre del servicio, no uses `localhost`)
@@ -51,7 +67,7 @@ Esa página creará el archivo necesario y te llevará al asistente. Si ves un e
 - **Paso 3 – URL del sitio:** pon **`http://localhost:8080`** (o tu puerto).
 - **Paso 4:** Finaliza. Luego borra la carpeta `dup-installer` por seguridad.
 
-### 5. Entrar al sitio
+### 7. Entrar al sitio
 
 - Sitio: **http://localhost:8080**
 - Panel: **http://localhost:8080/wp-login.php**
@@ -59,6 +75,19 @@ Esa página creará el archivo necesario y te llevará al asistente. Si ves un e
 ---
 
 ## Cómo modificar el sitio (páginas y CSS)
+
+### Si la homepage, el template o el CSS no se ven en el sitio
+
+Si tu contenido (homepage con header/hero, `homepage.css`, `custom.css`) está en el código pero **no se ve** en http://localhost:8080:
+
+1. **Tema activo**  
+   **Apariencia** → **Temas**. Debe estar activo **"Hello Elementor Child"**. Si está "Hello Elementor", "Blocksy" u otro, haz clic en **Activar** en "Hello Elementor Child". Sin este tema activo, la plantilla personalizada no sale en el desplegable.
+2. **Asignar la plantilla a la página**  
+   **Páginas** → haz clic en el **título** de la página (no en "Edición rápida") para abrir el editor completo. En la columna derecha, **Atributos de página** → **Plantilla** → elige **"Homepage (HTML/CSS en proyecto)"** (no "Default template"). Si no ves esa opción, usa el paso 1 y recarga la página. Luego **Actualizar**.
+3. **Decirle a WordPress que esa página es la portada**  
+   **Ajustes** → **Lectura** → "Tu página de inicio muestra" → **Una página estática** → en "Página de inicio" elige esa misma página → **Guardar cambios**.
+
+**Nota:** La plantilla aparece en el desplegable con el nombre **"Homepage (HTML/CSS en proyecto)"**, no como "template-custom-homepage". Si no aparece, confirma que el tema activo es "Hello Elementor Child" y que editas la página desde el editor completo (no Edición rápida).
 
 ### Entrar al panel de WordPress
 

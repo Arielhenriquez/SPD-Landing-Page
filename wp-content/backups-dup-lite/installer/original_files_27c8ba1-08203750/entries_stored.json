@@ -19,5 +19,12 @@
         "stored": "installer_host_wpconfig",
         "mode": "move",
         "isRelative": true
+    },
+    "installer_host_htaccess": {
+        "baseName": "installer_host_htaccess",
+        "source": ".htaccess",
+        "stored": "installer_host_htaccess",
+        "mode": "move",
+        "isRelative": true
     }
 }

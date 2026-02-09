@@ -10,7 +10,7 @@ $home = home_url( '/' );
     <div class="header-inner">
       <a href="<?php echo esc_url( $home ); ?>" class="logo">
         <span class="logo-icon"></span>
-        <span class="logo-text">SPD Hola manolo Contracting, Inc.</span>
+        <span class="logo-text">SPD Contracting, Inc.</span>
       </a>
       <nav class="main-nav">
         <ul>

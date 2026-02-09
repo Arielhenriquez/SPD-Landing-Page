@@ -1,0 +1,823 @@
+{
+    "dup_type": "lite",
+    "created": "2026-02-08 20:37:50",
+    "version_dup": "1.5.15",
+    "version_wp": "6.9.1",
+    "version_db": "10.11.16",
+    "version_php": "8.3.30",
+    "version_os": "Linux",
+    "blogname": "SPD Contracting, Inc.",
+    "exportOnlyDB": 0,
+    "secure_on": 0,
+    "secure_pass": "$2a$08$U8f5huyQs6PFpA.r3hh85.eQGXhM1vW0VViLRoVyDKAXyCRl1LadW",
+    "dbhost": null,
+    "dbname": null,
+    "dbuser": null,
+    "cpnl_host": null,
+    "cpnl_user": null,
+    "cpnl_pass": null,
+    "cpnl_enable": null,
+    "wp_tableprefix": "wp_",
+    "mu_mode": 0,
+    "mu_generation": 0,
+    "mu_siteadmins": [
+        "admin"
+    ],
+    "subsites": [
+        {
+            "id": 1,
+            "domain": "qmbqbrt0dq.wpdns.site",
+            "path": "\/",
+            "blogname": "SPD Contracting, Inc.",
+            "blog_prefix": "wp_",
+            "filteredTables": [],
+            "adminUsers": [
+                {
+                    "ID": "2",
+                    "user_login": "arielhenriquez17@hotmail.com",
+                    "id": "2"
+                },
+                {
+                    "ID": "1",
+                    "user_login": "fgutierrez@spdcon-inc.com",
+                    "id": "1"
+                },
+                {
+                    "ID": "3",
+                    "user_login": "info@hauscommercialcleaning.com",
+                    "id": "3"
+                }
+            ],
+            "fullHomeUrl": "https:\/\/qmbqbrt0dq.wpdns.site",
+            "fullSiteUrl": "https:\/\/qmbqbrt0dq.wpdns.site",
+            "uploadPath": "wp-content\/uploads",
+            "fullUploadPath": "\/home\/qmbqaww\/public_html\/wp-content\/uploads",
+            "fullUploadSafePath": "\/home\/qmbqaww\/public_html\/wp-content\/uploads",
+            "fullUploadUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/uploads",
+            "filteredPaths": []
+        }
+    ],
+    "main_site_id": null,
+    "mu_is_filtered": false,
+    "license_limit": 0,
+    "license_type": 0,
+    "dbInfo": {
+        "buildMode": "MYSQLDUMP",
+        "charSetList": [
+            "utf8mb4"
+        ],
+        "collationList": [
+            "utf8mb4_unicode_520_ci",
+            "utf8mb4_unicode_ci"
+        ],
+        "engineList": [
+            "InnoDB"
+        ],
+        "isTablesUpperCase": 0,
+        "isNameUpperCase": 0,
+        "name": "qmbqaww_prod",
+        "tablesBaseCount": 35,
+        "tablesFinalCount": 35,
+        "muFilteredTableCount": 0,
+        "tablesRowCount": 4368,
+        "tablesSizeOnDisk": 17711104,
+        "tablesList": {
+            "wp_actionscheduler_actions": {
+                "inaccurateRows": 12,
+                "insertedRows": 12,
+                "size": 163840
+            },
+            "wp_actionscheduler_claims": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp_actionscheduler_groups": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 32768
+            },
+            "wp_actionscheduler_logs": {
+                "inaccurateRows": 31,
+                "insertedRows": 34,
+                "size": 49152
+            },
+            "wp_aioseo_cache": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp_commentmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp_comments": {
+                "inaccurateRows": 0,
+                "insertedRows": 1,
+                "size": 98304
+            },
+            "wp_duplicator_packages": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 32768
+            },
+            "wp_e_events": {
+                "inaccurateRows": 3,
+                "insertedRows": 3,
+                "size": 32768
+            },
+            "wp_ff_scheduled_actions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_draft_submissions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_entry_details": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_forms": {
+                "inaccurateRows": 2,
+                "insertedRows": 3,
+                "size": 16384
+            },
+            "wp_fluentform_form_analytics": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_form_meta": {
+                "inaccurateRows": 18,
+                "insertedRows": 20,
+                "size": 65536
+            },
+            "wp_fluentform_logs": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_order_items": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_submissions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 81920
+            },
+            "wp_fluentform_submission_meta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp_fluentform_subscriptions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_fluentform_transactions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp_links": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp_litespeed_url": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp_litespeed_url_file": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 98304
+            },
+            "wp_options": {
+                "inaccurateRows": 575,
+                "insertedRows": 584,
+                "size": 4292608
+            },
+            "wp_postmeta": {
+                "inaccurateRows": 2857,
+                "insertedRows": 3049,
+                "size": 9158656
+            },
+            "wp_posts": {
+                "inaccurateRows": 410,
+                "insertedRows": 587,
+                "size": 2801664
+            },
+            "wp_rank_math_internal_links": {
+                "inaccurateRows": 283,
+                "insertedRows": 283,
+                "size": 98304
+            },
+            "wp_rank_math_internal_meta": {
+                "inaccurateRows": 26,
+                "insertedRows": 26,
+                "size": 16384
+            },
+            "wp_termmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp_terms": {
+                "inaccurateRows": 12,
+                "insertedRows": 12,
+                "size": 49152
+            },
+            "wp_term_relationships": {
+                "inaccurateRows": 37,
+                "insertedRows": 37,
+                "size": 32768
+            },
+            "wp_term_taxonomy": {
+                "inaccurateRows": 11,
+                "insertedRows": 12,
+                "size": 49152
+            },
+            "wp_usermeta": {
+                "inaccurateRows": 85,
+                "insertedRows": 85,
+                "size": 49152
+            },
+            "wp_users": {
+                "inaccurateRows": 3,
+                "insertedRows": 3,
+                "size": 65536
+            }
+        },
+        "lowerCaseTableNames": 0,
+        "dbEngine": "MariaDB",
+        "version": "10.11.16",
+        "versionComment": "MariaDB Server",
+        "viewCount": 0,
+        "procCount": 0,
+        "funcCount": 0,
+        "triggerList": []
+    },
+    "packInfo": {
+        "packageId": 1,
+        "packageName": "20260208_spdcontractinginc",
+        "packageHash": "27c8ba1-08203750",
+        "secondaryHash": "1003ed9-08203750"
+    },
+    "fileInfo": {
+        "dirCount": 2396,
+        "fileCount": 13887,
+        "size": 136285254
+    },
+    "wpInfo": {
+        "version": "6.9.1",
+        "is_multisite": false,
+        "network_id": 1,
+        "targetRoot": "\/home\/qmbqaww\/public_html",
+        "targetPaths": [
+            "\/home\/qmbqaww\/public_html"
+        ],
+        "adminUsers": [
+            {
+                "ID": "2",
+                "user_login": "arielhenriquez17@hotmail.com",
+                "id": "2"
+            },
+            {
+                "ID": "1",
+                "user_login": "fgutierrez@spdcon-inc.com",
+                "id": "1"
+            },
+            {
+                "ID": "3",
+                "user_login": "info@hauscommercialcleaning.com",
+                "id": "3"
+            }
+        ],
+        "configs": {
+            "defines": {
+                "ABSPATH": {
+                    "value": "\/home\/qmbqaww\/public_html\/",
+                    "inWpConfig": true
+                },
+                "DB_CHARSET": {
+                    "value": "utf8mb4",
+                    "inWpConfig": true
+                },
+                "DB_COLLATE": {
+                    "value": "",
+                    "inWpConfig": true
+                },
+                "AUTH_KEY": {
+                    "value": "h4tx7dbz6kwlzoeiueydjfy69bab9qusxhjqcgz9z4h1bbbbyahtw4ugijzt1sho",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_KEY": {
+                    "value": "erhfjdhgsdrrlroam5xmyefjiellpaxxvxhphevy4qimiz9zrs07mkh655dedrfz",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_KEY": {
+                    "value": "sn75yuzxucaitzn3as1lygeqcnypdc1yp7hbrbhehaqjuvuytkrwjh2grgexqdot",
+                    "inWpConfig": true
+                },
+                "NONCE_KEY": {
+                    "value": "davnzbzgoufasbkytgurocp9valooaa9tt9ztqywuha7smu7mbjdndhcagcn364u",
+                    "inWpConfig": true
+                },
+                "AUTH_SALT": {
+                    "value": "vuzptrsy6gzrqao5a9kjaiz9dpqlqnkns8dnzsvtcqke0gqmawo226mg958itb4c",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_SALT": {
+                    "value": "m5omdtb7xcjxvaoruehzb5qw6rtqflispfsmmcdbp5xshqcks2zhoxcpkkepscih",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_SALT": {
+                    "value": "dv2lx3r56f7jbovijre8x6ev6msw15vyfllkzrrc7ykndkaynss2i2a0trcldbrj",
+                    "inWpConfig": true
+                },
+                "NONCE_SALT": {
+                    "value": "bvflbi7swrngc9skbw79qzzfl7sa8c5nn8z9krdjaq3lkdktxivyzqs8pd8gnhwb",
+                    "inWpConfig": true
+                },
+                "WP_CONTENT_DIR": {
+                    "value": "\/home\/qmbqaww\/public_html\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_CONTENT_URL": {
+                    "value": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_DIR": {
+                    "value": "\/home\/qmbqaww\/public_html\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_URL": {
+                    "value": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "PLUGINDIR": {
+                    "value": "wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "AUTOSAVE_INTERVAL": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "WP_POST_REVISIONS": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "COOKIE_DOMAIN": {
+                    "value": "",
+                    "inWpConfig": false
+                },
+                "MULTISITE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG": {
+                    "value": false,
+                    "inWpConfig": true
+                },
+                "SCRIPT_DEBUG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_LOG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_DISPLAY": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "WP_MEMORY_LIMIT": {
+                    "value": "40M",
+                    "inWpConfig": false
+                },
+                "WP_MAX_MEMORY_LIMIT": {
+                    "value": "1024M",
+                    "inWpConfig": false
+                },
+                "WP_CACHE": {
+                    "value": true,
+                    "inWpConfig": true
+                },
+                "WP_LANG_DIR": {
+                    "value": "\/home\/qmbqaww\/public_html\/wp-content\/languages",
+                    "inWpConfig": false
+                },
+                "FS_CHMOD_DIR": {
+                    "value": 493,
+                    "inWpConfig": false
+                },
+                "FS_CHMOD_FILE": {
+                    "value": 420,
+                    "inWpConfig": false
+                },
+                "WP_CRON_LOCK_TIMEOUT": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "COOKIEPATH": {
+                    "value": "\/",
+                    "inWpConfig": false
+                },
+                "SITECOOKIEPATH": {
+                    "value": "\/",
+                    "inWpConfig": false
+                },
+                "ADMIN_COOKIE_PATH": {
+                    "value": "\/wp-admin",
+                    "inWpConfig": false
+                },
+                "PLUGINS_COOKIE_PATH": {
+                    "value": "\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "TEMPLATEPATH": {
+                    "value": "\/home\/qmbqaww\/public_html\/wp-content\/themes\/hello-elementor",
+                    "inWpConfig": false
+                },
+                "STYLESHEETPATH": {
+                    "value": "\/home\/qmbqaww\/public_html\/wp-content\/themes\/hello-elementor",
+                    "inWpConfig": false
+                },
+                "EMPTY_TRASH_DAYS": {
+                    "value": 30,
+                    "inWpConfig": false
+                },
+                "FORCE_SSL_ADMIN": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_DIR": {
+                    "value": "\/home\/qmbqaww\/public_html\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_URL": {
+                    "value": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "MUPLUGINDIR": {
+                    "value": "wp-content\/mu-plugins",
+                    "inWpConfig": false
+                }
+            },
+            "realValues": {
+                "siteUrl": "https:\/\/qmbqbrt0dq.wpdns.site",
+                "homeUrl": "https:\/\/qmbqbrt0dq.wpdns.site",
+                "loginUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-login.php",
+                "contentUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content",
+                "uploadBaseUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/uploads",
+                "pluginsUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/plugins",
+                "mupluginsUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/mu-plugins",
+                "themesUrl": "https:\/\/qmbqbrt0dq.wpdns.site\/wp-content\/themes",
+                "originalPaths": {
+                    "home": "\/home\/qmbqaww\/public_html",
+                    "abs": "\/home\/qmbqaww\/public_html",
+                    "wpconfig": "\/home\/qmbqaww\/public_html",
+                    "wpcontent": "\/home\/qmbqaww\/public_html\/wp-content",
+                    "uploads": "\/home\/qmbqaww\/public_html\/wp-content\/uploads",
+                    "plugins": "\/home\/qmbqaww\/public_html\/wp-content\/plugins",
+                    "muplugins": "\/home\/qmbqaww\/public_html\/wp-content\/mu-plugins",
+                    "themes": "\/home\/qmbqaww\/public_html\/wp-content\/themes"
+                },
+                "archivePaths": {
+                    "home": "\/home\/qmbqaww\/public_html",
+                    "abs": "\/home\/qmbqaww\/public_html",
+                    "wpconfig": "\/home\/qmbqaww\/public_html",
+                    "wpcontent": "\/home\/qmbqaww\/public_html\/wp-content",
+                    "uploads": "\/home\/qmbqaww\/public_html\/wp-content\/uploads",
+                    "plugins": "\/home\/qmbqaww\/public_html\/wp-content\/plugins",
+                    "muplugins": "\/home\/qmbqaww\/public_html\/wp-content\/mu-plugins",
+                    "themes": "\/home\/qmbqaww\/public_html\/wp-content\/themes"
+                }
+            }
+        },
+        "plugins": {
+            "advanced-custom-fields\/acf.php": {
+                "slug": "advanced-custom-fields\/acf.php",
+                "name": "Advanced Custom Fields",
+                "version": "6.7.0",
+                "pluginURI": "https:\/\/www.advancedcustomfields.com",
+                "author": "WP Engine",
+                "authorURI": "https:\/\/wpengine.com\/?utm_source=wordpress.org&utm_medium=referral&utm_campaign=plugin_directory&utm_content=advanced_custom_fields",
+                "description": "Customize WordPress with powerful, professional and intuitive fields.",
+                "title": "Advanced Custom Fields",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "duplicator\/duplicator.php": {
+                "slug": "duplicator\/duplicator.php",
+                "name": "Duplicator",
+                "version": "1.5.15",
+                "pluginURI": "https:\/\/duplicator.com\/",
+                "author": "Duplicator",
+                "authorURI": "https:\/\/duplicator.com\/",
+                "description": "Migrate and backup a copy of your WordPress files and database. Duplicate and move a site from one location to another quickly.",
+                "title": "Duplicator",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "elementor\/elementor.php": {
+                "slug": "elementor\/elementor.php",
+                "name": "Elementor",
+                "version": "3.35.3",
+                "pluginURI": "https:\/\/elementor.com\/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash",
+                "author": "Elementor.com",
+                "authorURI": "https:\/\/elementor.com\/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash",
+                "description": "The Elementor Website Builder has it all: drag and drop page builder, pixel perfect design, mobile responsive editing, and more. Get started now!",
+                "title": "Elementor",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "essential-addons-for-elementor-lite\/essential_adons_elementor.php": {
+                "slug": "essential-addons-for-elementor-lite\/essential_adons_elementor.php",
+                "name": "Essential Addons for Elementor",
+                "version": "6.5.9",
+                "pluginURI": "https:\/\/essential-addons.com\/",
+                "author": "WPDeveloper",
+                "authorURI": "https:\/\/wpdeveloper.com\/",
+                "description": "The Essential plugin you install after Elementor! Packed with 100+ stunning elements like Data Table, Event Calendar, Filterable Gallery, WooCommerce.",
+                "title": "Essential Addons for Elementor",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "fluentform\/fluentform.php": {
+                "slug": "fluentform\/fluentform.php",
+                "name": "Fluent Forms",
+                "version": "6.1.17",
+                "pluginURI": "https:\/\/wpmanageninja.com\/wp-fluent-form\/",
+                "author": "Contact Form - WPManageNinja LLC",
+                "authorURI": "https:\/\/fluentforms.com",
+                "description": "Contact Form By Fluent Forms is the advanced Contact form plugin with drag and drop, multi column supported form builder plugin",
+                "title": "Fluent Forms",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "fluentformpro\/fluentformpro.php": {
+                "slug": "fluentformpro\/fluentformpro.php",
+                "name": "Fluent Forms Pro Add On Pack",
+                "version": "6.1.13",
+                "pluginURI": "https:\/\/fluentforms.com\/",
+                "author": "Fluent Forms",
+                "authorURI": "https:\/\/fluentforms.com",
+                "description": "The Pro version of FluentForm, the most advanced, drag and drop form builder plugin for WordPress.",
+                "title": "Fluent Forms Pro Add On Pack",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "litespeed-cache\/litespeed-cache.php": {
+                "slug": "litespeed-cache\/litespeed-cache.php",
+                "name": "LiteSpeed Cache",
+                "version": "7.7",
+                "pluginURI": "https:\/\/www.litespeedtech.com\/products\/cache-plugins\/wordpress-acceleration",
+                "author": "LiteSpeed Technologies",
+                "authorURI": "https:\/\/www.litespeedtech.com",
+                "description": "High-performance page caching and site optimization from LiteSpeed",
+                "title": "LiteSpeed Cache",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "seo-by-rank-math\/rank-math.php": {
+                "slug": "seo-by-rank-math\/rank-math.php",
+                "name": "Rank Math SEO",
+                "version": "1.0.263",
+                "pluginURI": "https:\/\/rankmath.com\/",
+                "author": "Rank Math SEO",
+                "authorURI": "https:\/\/rankmath.com\/?utm_source=Plugin&utm_medium=Readme%20Author%20URI&utm_campaign=WP",
+                "description": "Rank Math SEO is the Best WordPress SEO plugin with the features of many SEO and AI SEO tools in a single package to help multiply your SEO traffic.",
+                "title": "Rank Math SEO",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "custom-css-js\/custom-css-js.php": {
+                "slug": "custom-css-js\/custom-css-js.php",
+                "name": "Simple Custom CSS and JS",
+                "version": "3.51.3",
+                "pluginURI": "https:\/\/wordpress.org\/plugins\/custom-css-js\/",
+                "author": "SilkyPress.com",
+                "authorURI": "https:\/\/www.silkypress.com",
+                "description": "Easily add Custom CSS or JS to your website with an awesome editor.",
+                "title": "Simple Custom CSS and JS",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "header-footer-elementor\/header-footer-elementor.php": {
+                "slug": "header-footer-elementor\/header-footer-elementor.php",
+                "name": "Ultimate Addons for Elementor (UAE)",
+                "version": "2.8.3",
+                "pluginURI": "https:\/\/wordpress.org\/plugins\/header-footer-elementor\/",
+                "author": "Brainstorm Force",
+                "authorURI": "https:\/\/www.brainstormforce.com\/",
+                "description": "Ultimate Addons is a powerful plugin allows you to create custom headers and footers with Elementor and display them in selected locations. You can also create custom Elementor blocks and place them anywhere on your website using a shortcode.",
+                "title": "Ultimate Addons for Elementor (UAE)",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wp-carousel-free\/wp-carousel-free.php": {
+                "slug": "wp-carousel-free\/wp-carousel-free.php",
+                "name": "WP Carousel",
+                "version": "2.7.10",
+                "pluginURI": "https:\/\/wpcarousel.io\/",
+                "author": "ShapedPlugin LLC",
+                "authorURI": "https:\/\/shapedplugin.com\/",
+                "description": "Create beautiful image carousels, sliders, video sliders, video galleries, and photo galleries with built-in Lightbox. Easily showcase images, videos, posts, and WooCommerce products with responsive layouts, grids, and fast performance\u2014no code required.",
+                "title": "WP Carousel",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wp-carousel-pro\/wp-carousel-pro.php": {
+                "slug": "wp-carousel-pro\/wp-carousel-pro.php",
+                "name": "WP Carousel Pro",
+                "version": "4.2.2",
+                "pluginURI": "https:\/\/wpcarousel.io\/",
+                "author": "ShapedPlugin LLC",
+                "authorURI": "https:\/\/shapedplugin.com\/",
+                "description": "Responsive WordPress Carousel plugin to create beautiful carousels easily. Build responsive Image Carousel, Post Carousel, WooCommerce Product Carousel, Content Carousel, Video Carousel, and more.",
+                "title": "WP Carousel Pro",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "cdn-cache-management.php": {
+                "slug": "cdn-cache-management.php",
+                "name": "CDN Cache Plugin",
+                "version": "1.1.4",
+                "pluginURI": "",
+                "author": "",
+                "authorURI": "",
+                "description": "Clear the cloud cache automatically",
+                "title": "CDN Cache Plugin",
+                "networkActive": false,
+                "active": false,
+                "mustUse": true,
+                "dropIns": false
+            }
+        },
+        "themes": {
+            "blocksy": {
+                "slug": "blocksy",
+                "themeName": "Blocksy",
+                "version": "2.1.27",
+                "themeURI": "https:\/\/creativethemes.com\/blocksy\/",
+                "parentTheme": false,
+                "template": "blocksy",
+                "stylesheet": "blocksy",
+                "description": "Blocksy is a fast, modern WordPress theme with advanced WooCommerce support and full compatibility with the block editor.",
+                "author": "CreativeThemes",
+                "authorURI": "https:\/\/creativethemes.com",
+                "tags": [
+                    "accessibility-ready",
+                    "blog",
+                    "block-patterns",
+                    "e-commerce",
+                    "wide-blocks",
+                    "block-styles",
+                    "grid-layout",
+                    "one-column",
+                    "two-columns",
+                    "three-columns",
+                    "four-columns",
+                    "right-sidebar",
+                    "left-sidebar",
+                    "translation-ready",
+                    "custom-colors",
+                    "custom-logo",
+                    "custom-menu",
+                    "featured-images",
+                    "footer-widgets",
+                    "full-width-template",
+                    "theme-options",
+                    "threaded-comments"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": false
+            },
+            "hello-elementor": {
+                "slug": "hello-elementor",
+                "themeName": "Hello Elementor",
+                "version": "3.4.6",
+                "themeURI": "https:\/\/elementor.com\/hello-theme\/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash",
+                "parentTheme": false,
+                "template": "hello-elementor",
+                "stylesheet": "hello-elementor",
+                "description": "Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.",
+                "author": "Elementor Team",
+                "authorURI": "https:\/\/elementor.com\/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash",
+                "tags": [
+                    "accessibility-ready",
+                    "flexible-header",
+                    "custom-colors",
+                    "custom-menu",
+                    "custom-logo",
+                    "featured-images",
+                    "rtl-language-support",
+                    "threaded-comments",
+                    "translation-ready"
+                ],
+                "isAllowed": true,
+                "isActive": true,
+                "defaultTheme": false
+            },
+            "twentytwentyfive": {
+                "slug": "twentytwentyfive",
+                "themeName": "Twenty Twenty-Five",
+                "version": "1.4",
+                "themeURI": "https:\/\/wordpress.org\/themes\/twentytwentyfive\/",
+                "parentTheme": false,
+                "template": "twentytwentyfive",
+                "stylesheet": "twentytwentyfive",
+                "description": "Twenty Twenty-Five emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.",
+                "author": "the WordPress team",
+                "authorURI": "https:\/\/wordpress.org",
+                "tags": [
+                    "one-column",
+                    "custom-colors",
+                    "custom-menu",
+                    "custom-logo",
+                    "editor-style",
+                    "featured-images",
+                    "full-site-editing",
+                    "block-patterns",
+                    "rtl-language-support",
+                    "sticky-post",
+                    "threaded-comments",
+                    "translation-ready",
+                    "wide-blocks",
+                    "block-styles",
+                    "style-variations",
+                    "accessibility-ready",
+                    "blog",
+                    "portfolio",
+                    "news"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": true
+            }
+        }
+    },
+    "defaultStorageId": -1,
+    "components": [
+        "package_component_db",
+        "package_component_core",
+        "package_component_plugins",
+        "package_component_themes",
+        "package_component_uploads",
+        "package_component_other"
+    ],
+    "opts_delete": "[\"duplicator_ui_view_state\",\"duplicator_package_active\",\"duplicator_settings\",\"duplicator_is_pro_enable_notice_dismissed\"]",
+    "brand": {
+        "name": "Duplicator",
+        "isDefault": true,
+        "logo": "<i class=\"fa fa-bolt fa-sm\"><\/i> Duplicator",
+        "enabled": false,
+        "style": []
+    },
+    "overwriteInstallerParams": {
+        "blogname": {
+            "value": "SPD Contracting, Inc."
+        }
+    },
+    "installer_base_name": "installer.php.bak",
+    "installer_backup_name": "20260208_spdcontractinginc_27c8ba10e49c5b772531_20260208203750_installer-backup.php",
+    "package_name": "20260208_spdcontractinginc_27c8ba10e49c5b772531_20260208203750_archive.zip",
+    "package_hash": "27c8ba1-08203750",
+    "package_notes": ""
+}
