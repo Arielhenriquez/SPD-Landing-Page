@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: Homepage (HTML/CSS en proyecto)
+ * Template Name: Projects
  *
- * Portada: navbar + hero, approach, featured projects, services, cta + footer.
- * Mismo navbar y footer que Projects. Estilos en base, layout, components, navbar, pages.
+ * Página Projects: navbar + contenido (Featured, Services, Government Buildings, Gallery, Related) + footer.
+ * Carrusel genérico .c-carousel; datos desde inc/projects-data.php.
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class( 'page-projects' ); ?>>
 <?php get_template_part( 'template-parts/header-navbar' ); ?>
-<?php get_template_part( 'template-parts/homepage', 'content' ); ?>
+<?php get_template_part( 'template-parts/projects', 'content' ); ?>
 <?php get_template_part( 'template-parts/footer-spd' ); ?>
 <?php wp_footer(); ?>
 </body>

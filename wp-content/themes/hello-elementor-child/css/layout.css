@@ -1,0 +1,14 @@
+/**
+ * layout.css - Container, grids, spacing
+ */
+.layout__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}

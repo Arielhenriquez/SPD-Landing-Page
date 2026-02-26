@@ -1,0 +1,69 @@
+/**
+ * base.css - Variables, reset, tipografía
+ * Prefijo de componentes: .site-header, .nav__, .footer__
+ */
+:root {
+  --color-dark: #0d1b2a;
+  --color-dark-blue: #1b263b;
+  --color-navy: #1e3a5f;
+  --color-accent: #e07c24;
+  --color-accent-hover: #c96a1a;
+  --color-white: #ffffff;
+  --color-gray: #4a5568;
+  --color-gray-light: #718096;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --container-max: 1200px;
+  --header-height: 72px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Header y footer SPD: prioridad sobre estilos globales del tema/Elementor ========== */
+.site-header,
+.site-footer {
+  font-family: var(--font-sans);
+  box-sizing: border-box;
+}
+
+.site-header *,
+.site-header *::before,
+.site-header *::after,
+.site-footer *,
+.site-footer *::before,
+.site-footer *::after {
+  box-sizing: border-box;
+}

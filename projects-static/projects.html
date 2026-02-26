@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects – SPD Contracting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/carousel.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<main class="projects-page">
+
+  <!-- 1) Navbar fija -->
+  <header class="projects-page__navbar" role="banner">
+    <div class="projects-page__navbar-inner">
+      <a href="/" class="projects-page__logo">SPD Contracting</a>
+      <nav class="projects-page__nav" aria-label="Principal">
+        <a href="/">Home</a>
+        <a href="/projects/" class="projects-page__nav--active">Projects</a>
+        <a href="/services/">Services</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2) Our Services - carrusel de cards cuadradas -->
+  <section class="projects-page__section" aria-labelledby="our-services-title">
+    <div class="projects-page__container">
+      <h2 id="our-services-title" class="projects-page__section-title">Our Services</h2>
+      <div class="projects-page__carousel-wrap">
+        <div class="c-carousel" data-carousel data-carousel-dots="false" data-carousel-loop="true" data-carousel-breakpoints='{"0":1,"600":2,"900":3}' aria-label="Our services">
+          <div class="c-carousel__viewport">
+            <div class="c-carousel__track">
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card projects-page__service-card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/400/240?random=1" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Construction</p>
+                    <h3 class="c-carousel__card-title">General Contracting</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card projects-page__service-card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/400/240?random=2" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Renovation</p>
+                    <h3 class="c-carousel__card-title">Building Renovations</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card projects-page__service-card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/400/240?random=3" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Government</p>
+                    <h3 class="c-carousel__card-title">Public Facilities</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card projects-page__service-card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/400/240?random=4" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Housing</p>
+                    <h3 class="c-carousel__card-title">Residential &amp; Multi-family</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <button class="c-carousel__btn c-carousel__btn--prev" type="button" aria-label="Anterior"></button>
+          <button class="c-carousel__btn c-carousel__btn--next" type="button" aria-label="Siguiente"></button>
+          <div class="c-carousel__dots" aria-label="Paginación"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Featured Project: Government Owned Buildings - 2 grids -->
+  <section class="projects-page__section projects-page__section--alt" aria-labelledby="featured-title">
+    <div class="projects-page__container">
+      <h2 id="featured-title" class="projects-page__section-title">Featured Project</h2>
+      <p class="projects-page__section-subtitle">Government Owned Buildings</p>
+
+      <div class="projects-page__grid projects-page__grid--2">
+        <article class="projects-page__feature-card">
+          <div class="projects-page__feature-card-image">
+            <img src="https://picsum.photos/600/400?random=10" alt="Government building project">
+          </div>
+          <div class="projects-page__feature-card-body">
+            <p class="projects-page__feature-card-category">Government</p>
+            <h3 class="projects-page__feature-card-title">Administrative Complex Phase One</h3>
+            <p class="projects-page__feature-card-desc">Modernization and structural upgrades for public administration facilities.</p>
+          </div>
+        </article>
+        <article class="projects-page__feature-card">
+          <div class="projects-page__feature-card-image">
+            <img src="https://picsum.photos/600/400?random=11" alt="Recreation center project">
+          </div>
+          <div class="projects-page__feature-card-body">
+            <p class="projects-page__feature-card-category">Recreational</p>
+            <h3 class="projects-page__feature-card-title">Community Recreation Center</h3>
+            <p class="projects-page__feature-card-desc">New construction and exterior improvements for community use.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Gallery - grid -->
+  <section class="projects-page__section" aria-labelledby="gallery-title">
+    <div class="projects-page__container">
+      <h2 id="gallery-title" class="projects-page__section-title">Gallery</h2>
+      <div class="projects-page__gallery">
+        <div class="projects-page__gallery-item">
+          <img src="https://picsum.photos/400/300?random=20" alt="Project gallery 1">
+        </div>
+        <div class="projects-page__gallery-item">
+          <img src="https://picsum.photos/400/300?random=21" alt="Project gallery 2">
+        </div>
+        <div class="projects-page__gallery-item">
+          <img src="https://picsum.photos/400/300?random=22" alt="Project gallery 3">
+        </div>
+        <div class="projects-page__gallery-item">
+          <img src="https://picsum.photos/400/300?random=23" alt="Project gallery 4">
+        </div>
+        <div class="projects-page__gallery-item">
+          <img src="https://picsum.photos/400/300?random=24" alt="Project gallery 5">
+        </div>
+        <div class="projects-page__gallery-item">
+          <img src="https://picsum.photos/400/300?random=25" alt="Project gallery 6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) Related Projects - carrusel de cards horizontales -->
+  <section class="projects-page__section projects-page__section--alt" aria-labelledby="related-title">
+    <div class="projects-page__container">
+      <h2 id="related-title" class="projects-page__section-title">Related Projects</h2>
+      <div class="projects-page__carousel-wrap">
+        <div class="c-carousel" data-carousel data-carousel-dots="true" data-carousel-loop="true" data-carousel-breakpoints='{"0":1,"600":2,"900":3}' aria-label="Related projects">
+          <div class="c-carousel__viewport">
+            <div class="c-carousel__track">
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/600/320?random=30" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Government Housing</p>
+                    <h3 class="c-carousel__card-title">Forest Ridge and The Vistas Apartments Renovations</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/600/320?random=31" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Recreational Facilities</p>
+                    <h3 class="c-carousel__card-title">Sherwood Recreation Center Exterior Improvements</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/600/320?random=32" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Recreational Facilities</p>
+                    <h3 class="c-carousel__card-title">Randall Recreation Center Project</h3>
+                  </div>
+                </article>
+              </div>
+              <div class="c-carousel__slide">
+                <article class="c-carousel__card">
+                  <div class="c-carousel__card-image">
+                    <img src="https://picsum.photos/600/320?random=33" alt="">
+                  </div>
+                  <div class="c-carousel__card-body">
+                    <p class="c-carousel__card-category">Government Housing</p>
+                    <h3 class="c-carousel__card-title">Community Center Modernization Phase Two</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <button class="c-carousel__btn c-carousel__btn--prev" type="button" aria-label="Anterior"></button>
+          <button class="c-carousel__btn c-carousel__btn--next" type="button" aria-label="Siguiente"></button>
+          <div class="c-carousel__dots" aria-label="Paginación"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6) Footer -->
+  <footer class="projects-page__footer" role="contentinfo">
+    <div class="projects-page__container">
+      <div class="projects-page__footer-inner">
+        <p class="projects-page__footer-brand">SPD Contracting Inc.</p>
+        <p class="projects-page__footer-copy">&copy; 2025 SPD Contracting. All rights reserved.</p>
+        <nav class="projects-page__footer-nav" aria-label="Footer">
+          <a href="/privacy/">Privacy</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="vendor/carousel.js"></script>
+<script src="projects.js"></script>
+</body>
+</html>
