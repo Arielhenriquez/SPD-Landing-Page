@@ -7,6 +7,27 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Clase en body para que los estilos SPD (navbar/footer) ganen sobre Elementor y tema padre.
+ */
+function hello_elementor_child_body_class_spd( $classes ) {
+	$classes[] = 'spd-theme';
+	return $classes;
+}
+add_filter( 'body_class', 'hello_elementor_child_body_class_spd', 5 );
+
+/**
+ * Evitar que el tema padre encole header-footer.css (usamos nuestro navbar/footer).
+ */
+function hello_elementor_child_disable_parent_header_footer_css() {
+	if ( is_admin() ) {
+		return;
+	}
+	wp_dequeue_style( 'hello-elementor-header-footer' );
+	wp_deregister_style( 'hello-elementor-header-footer' );
+}
+add_action( 'wp_enqueue_scripts', 'hello_elementor_child_disable_parent_header_footer_css', 20 );
+
+/**
  * CSS global del tema hijo (si existe).
  */
 function hello_elementor_child_enqueue_styles() {
@@ -51,9 +72,6 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 	if ( is_admin() ) {
 		return;
 	}
-	/* Evitar que el CSS de header/footer del tema padre sobrescriba nuestro navbar y footer */
-	wp_dequeue_style( 'hello-elementor-header-footer' );
-
 	$path = get_stylesheet_directory();
 	$uri  = get_stylesheet_directory_uri();
 
@@ -106,8 +124,78 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 			'after'
 		);
 	}
+
+	/* Forzar navbar, mega menú Projects y footer por encima de Elementor/tema padre */
+	$navbar_override = '
+		body.spd-theme #site-header.site-header {
+			position: fixed !important;
+			top: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			height: 72px !important;
+			background: #0d1b2a !important;
+			z-index: 100 !important;
+			display: flex !important;
+			align-items: center !important;
+			padding: 0 !important;
+		}
+		body.spd-theme #site-footer.site-footer {
+			background: #1b263b !important;
+			color: #ffffff !important;
+			padding: 48px 0 32px !important;
+		}
+		/* Mega menú Projects: forzar estilos para que no los pise Elementor */
+		body.spd-theme #site-header .nav__dropdown.nav__mega,
+		body.spd-theme #site-header #nav-dropdown-projects {
+			display: grid !important;
+			grid-template-columns: 280px 1fr !important;
+			min-width: 520px !important;
+			max-width: 600px !important;
+			background: rgba(13, 27, 42, 0.98) !important;
+			border-radius: 0 0 8px 8px !important;
+			box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+			padding: 0 !important;
+		}
+		body.spd-theme #site-header .nav__mega-cols,
+		body.spd-theme #site-header #nav-dropdown-projects .nav__mega-cols {
+			background: transparent !important;
+			padding: 12px 0 !important;
+		}
+		body.spd-theme #site-header .nav__mega-category {
+			background: transparent !important;
+			color: rgba(255, 255, 255, 0.9) !important;
+			border: none !important;
+		}
+		body.spd-theme #site-header .nav__mega-category:hover,
+		body.spd-theme #site-header .nav__mega-category:focus {
+			background: rgba(255, 255, 255, 0.06) !important;
+			color: #ffffff !important;
+		}
+		body.spd-theme #site-header .nav__mega-category.is-active {
+			background: rgba(224, 124, 36, 0.15) !important;
+			color: #e07c24 !important;
+		}
+		body.spd-theme #site-header .nav__mega-panel-wrap {
+			border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
+			background: transparent !important;
+		}
+		body.spd-theme #site-header .nav__mega-panel {
+			background: rgba(0, 0, 0, 0.25) !important;
+			border-radius: 8px !important;
+			margin: 12px 12px 12px 0 !important;
+			padding: 16px 20px !important;
+		}
+		body.spd-theme #site-header .nav__mega-panel-inner a {
+			color: rgba(255, 255, 255, 0.92) !important;
+			text-decoration: none !important;
+		}
+		body.spd-theme #site-header .nav__mega-panel-inner a:hover {
+			color: #e07c24 !important;
+		}
+	';
+	wp_add_inline_style( 'hello-child-navbar', $navbar_override );
 }
-add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_spd_header_footer', 15 );
+add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_spd_header_footer', 999 );
 
 /**
  * Assets solo para plantillas Homepage, Projects y Contact: carousel, pages, homepage.js, contact-us.css.

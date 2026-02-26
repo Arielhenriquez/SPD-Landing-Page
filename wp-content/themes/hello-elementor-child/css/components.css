@@ -40,6 +40,8 @@
 }
 
 /* ========== Footer ========== */
+/* body.spd-theme para ganar especificidad sobre Elementor y tema padre */
+body.spd-theme .site-footer,
 .site-footer {
   background: var(--color-dark-blue);
   color: var(--color-white);
@@ -47,6 +49,8 @@
   font-family: var(--font-sans);
 }
 
+body.spd-theme .site-footer .layout__container,
+body.spd-theme .site-footer .container,
 .site-footer .layout__container,
 .site-footer .container {
   max-width: var(--container-max);

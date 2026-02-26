@@ -29,7 +29,7 @@ $logo_url     = 'https://qmbqbrt0dq.wpdns.site/wp-content/uploads/2026/01/logo.w
           </a>
           <div class="nav__dropdown nav__mega" id="nav-dropdown-projects" role="menu" aria-label="Projects submenu" hidden>
             <div class="nav__mega-cols">
-              <button type="button" class="nav__mega-category is-active" data-nav-panel="education" role="menuitem">Randall Recreation Center Project <span class="nav__mega-arrow" aria-hidden="true">›</span></button>
+              <button type="button" class="nav__mega-category is-active" data-nav-panel="education" role="menuitem">Educational Facilities<span class="nav__mega-arrow" aria-hidden="true">›</span></button>
               <button type="button" class="nav__mega-category" data-nav-panel="gov-buildings" role="menuitem">Government-Owned Buildings <span class="nav__mega-arrow" aria-hidden="true">›</span></button>
               <button type="button" class="nav__mega-category" data-nav-panel="municipal" role="menuitem">Municipal &amp; Healthcare <span class="nav__mega-arrow" aria-hidden="true">›</span></button>
               <button type="button" class="nav__mega-category" data-nav-panel="gov-housing" role="menuitem">Government Housing <span class="nav__mega-arrow" aria-hidden="true">›</span></button>
