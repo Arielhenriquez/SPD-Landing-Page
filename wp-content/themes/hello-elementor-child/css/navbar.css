@@ -11,11 +11,16 @@ body.spd-theme .site-header,
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   height: var(--header-height);
   background: var(--color-dark);
   z-index: 100;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-sizing: border-box;
 }
 
 body.spd-theme .site-header .layout__container,
@@ -58,13 +63,12 @@ body.spd-theme .site-header .nav__logo:hover,
   color: var(--color-white);
 }
 
-/* Logo imagen: mismo tamaño que el logo anterior (icono + texto ~40–50px) */
-/* Logo 779×164: altura ~42px, proporción conservada */
+/* Logo navbar: altura ~50–60px como referencia, proporción 779×164 */
 .navbar__logo-img {
   display: block;
-  height: 55px;
+  height: 52px;
   width: auto;
-  max-width: 300px; /* 42 * (779/164) ≈ 199 */
+  max-width: 284px;
   object-fit: contain;
   object-position: left center;
 }
@@ -72,7 +76,7 @@ body.spd-theme .site-header .nav__logo:hover,
 @media (max-width: 899px) {
   .navbar__logo-img {
     height: 36px;
-    max-width: 171px; /* 36 * (779/164) */
+    max-width: 171px;
   }
 }
 
@@ -137,6 +141,7 @@ body.spd-theme .site-header .nav__dropdown,
   z-index: 200;
 }
 
+body.spd-theme .site-header .nav__item[aria-expanded="true"] .nav__dropdown,
 .nav__item[aria-expanded="true"] .nav__dropdown {
   opacity: 1;
   visibility: visible;
@@ -255,24 +260,28 @@ body.spd-theme .site-header .nav__mega-panel-inner a,
   outline: none !important;
 }
 
-/* Simple dropdown (Approach & Expertise) */
+/* Simple dropdown (Approach & Expertise) – mismos estilos que el mega, especificidad alta */
+body.spd-theme .site-header .nav__dropdown-list,
 .nav__dropdown-list {
-  padding: 8px 0;
+  padding: 8px 0 !important;
 }
 
+body.spd-theme .site-header .nav__dropdown-list a,
 .nav__dropdown-list a {
-  display: block;
-  padding: 10px 20px;
-  color: var(--color-white);
-  font-size: 0.9rem;
-  text-decoration: none;
+  display: block !important;
+  padding: 10px 20px !important;
+  color: var(--color-white) !important;
+  font-size: 0.9rem !important;
+  text-decoration: none !important;
 }
 
+body.spd-theme .site-header .nav__dropdown-list a:hover,
+body.spd-theme .site-header .nav__dropdown-list a:focus,
 .nav__dropdown-list a:hover,
 .nav__dropdown-list a:focus {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--color-accent);
-  outline: none;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: var(--color-accent) !important;
+  outline: none !important;
 }
 
 /* ========== Mobile: hamburger + accordion ========== */

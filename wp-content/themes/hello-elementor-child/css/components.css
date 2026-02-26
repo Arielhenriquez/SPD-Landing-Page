@@ -43,10 +43,14 @@
 /* body.spd-theme para ganar especificidad sobre Elementor y tema padre */
 body.spd-theme .site-footer,
 .site-footer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   background: var(--color-dark-blue);
   color: var(--color-white);
   padding: 48px 0 32px;
   font-family: var(--font-sans);
+  box-sizing: border-box;
 }
 
 body.spd-theme .site-footer .layout__container,
@@ -78,20 +82,20 @@ body.spd-theme .site-footer .container,
   flex-shrink: 0;
 }
 
-/* Logo 779×164: altura 55px, proporción conservada */
+/* Logo footer: más compacto que navbar, proporción 779×164 */
 .footer__logo-img {
   display: block;
-  height: 55px;
+  height: 40px;
   width: auto;
-  max-width: 330px; /* 55 * (779/164) */
+  max-width: 220px;
   object-fit: contain;
   vertical-align: middle;
 }
 
 @media (max-width: 640px) {
   .footer__logo-img {
-    height: 46px;
-    max-width: 218px; /* 46 * (779/164) */
+    height: 34px;
+    max-width: 187px;
   }
 }
 

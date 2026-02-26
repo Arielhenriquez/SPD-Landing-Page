@@ -132,17 +132,25 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 			top: 0 !important;
 			left: 0 !important;
 			right: 0 !important;
+			width: 100% !important;
+			max-width: 100% !important;
+			min-width: 100% !important;
 			height: 72px !important;
 			background: #0d1b2a !important;
 			z-index: 100 !important;
 			display: flex !important;
 			align-items: center !important;
 			padding: 0 !important;
+			box-sizing: border-box !important;
 		}
 		body.spd-theme #site-footer.site-footer {
+			width: 100% !important;
+			max-width: 100% !important;
+			min-width: 100% !important;
 			background: #1b263b !important;
 			color: #ffffff !important;
 			padding: 48px 0 32px !important;
+			box-sizing: border-box !important;
 		}
 		/* Mega menú Projects: forzar estilos para que no los pise Elementor */
 		body.spd-theme #site-header .nav__dropdown.nav__mega,
@@ -190,6 +198,31 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 			text-decoration: none !important;
 		}
 		body.spd-theme #site-header .nav__mega-panel-inner a:hover {
+			color: #e07c24 !important;
+		}
+		/* Dropdown común (panel): Projects y Approach – fondo, sombra, esquinas */
+		body.spd-theme #site-header .nav__dropdown,
+		body.spd-theme #site-header #nav-dropdown-projects,
+		body.spd-theme #site-header #nav-dropdown-approach {
+			background: rgba(13, 27, 42, 0.98) !important;
+			border-radius: 0 0 8px 8px !important;
+			box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+			padding: 0 !important;
+		}
+		/* Approach & Expertise: lista de enlaces */
+		body.spd-theme #site-header #nav-dropdown-approach .nav__dropdown-list,
+		body.spd-theme #site-header .nav__dropdown:not(.nav__mega) .nav__dropdown-list {
+			padding: 8px 0 !important;
+		}
+		body.spd-theme #site-header #nav-dropdown-approach .nav__dropdown-list a,
+		body.spd-theme #site-header .nav__dropdown:not(.nav__mega) .nav__dropdown-list a {
+			color: #ffffff !important;
+			text-decoration: none !important;
+			padding: 10px 20px !important;
+		}
+		body.spd-theme #site-header #nav-dropdown-approach .nav__dropdown-list a:hover,
+		body.spd-theme #site-header .nav__dropdown:not(.nav__mega) .nav__dropdown-list a:hover {
+			background: rgba(255, 255, 255, 0.1) !important;
 			color: #e07c24 !important;
 		}
 	';
