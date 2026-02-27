@@ -7,7 +7,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 $projects_data = include get_stylesheet_directory() . '/inc/projects-data.php';
-$projects_url  = home_url( '/projects/' );
 ?>
 <main id="main-content">
   <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
@@ -89,9 +88,11 @@ $projects_url  = home_url( '/projects/' );
       <div class="c-carousel" data-carousel data-carousel-loop="true" data-carousel-dots="false" data-carousel-breakpoints='{"0":1,"600":2,"900":3}' aria-label="Gallery">
         <div class="c-carousel__viewport">
           <div class="c-carousel__track">
-            <?php foreach ( $projects_data as $p ) : ?>
+            <?php foreach ( $projects_data as $p ) :
+              $p_link = function_exists( 'spd_project_page_url' ) ? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' ) : home_url( '/projects/' );
+            ?>
               <div class="c-carousel__slide">
-                <a href="<?php echo esc_url( $projects_url . '#' . $p['slug'] ); ?>" class="gallery-slide-img">
+                <a href="<?php echo esc_url( $p_link ); ?>" class="gallery-slide-img">
                   <img src="<?php echo esc_url( $p['image'] ); ?>" alt="<?php echo esc_attr( $p['title'] ); ?>">
                 </a>
               </div>
@@ -111,7 +112,7 @@ $projects_url  = home_url( '/projects/' );
           <div class="c-carousel__track">
             <?php foreach ( $projects_data as $p ) :
               $excerpt = ! empty( $p['excerpt'] ) ? ( strlen( $p['excerpt'] ) > 120 ? substr( $p['excerpt'], 0, 117 ) . '...' : $p['excerpt'] ) : '';
-              $link = $projects_url . '#' . $p['slug'];
+              $link = function_exists( 'spd_project_page_url' ) ? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' ) : home_url( '/projects/' );
             ?>
               <div class="c-carousel__slide">
                 <article class="related-card">

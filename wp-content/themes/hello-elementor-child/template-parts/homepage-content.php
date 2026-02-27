@@ -7,6 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $home = home_url( '/' );
 $projects_url = home_url( '/projects/' );
+$contact_url = home_url( '/contact-us-2/' );
 ?>
   <main id="main-content">
     <section class="hero">
@@ -16,7 +17,7 @@ $projects_url = home_url( '/projects/' );
         <p class="hero-subtitle">Committed to your project</p>
         <div class="hero-buttons">
           <a href="<?php echo esc_url( $home ); ?>#approach" class="btn btn-primary">ABOUT US &gt;</a>
-          <a href="<?php echo esc_url( $home ); ?>#contact" class="btn btn-primary">CONTACT US &gt;</a>
+          <a href="<?php echo esc_url( $contact_url ); ?>" class="btn btn-primary">CONTACT US &gt;</a>
         </div>
       </div>
     </section>
@@ -118,7 +119,7 @@ $projects_url = home_url( '/projects/' );
       <div class="cta-overlay"></div>
       <div class="cta-content">
         <p class="cta-text">Reach out to us, and our team will respond promptly to assist you.</p>
-        <a href="<?php echo esc_url( $home ); ?>#contact" class="btn btn-primary">CONTACT US &gt;</a>
+        <a href="<?php echo esc_url( $contact_url ); ?>" class="btn btn-primary">CONTACT US &gt;</a>
       </div>
     </section>
   </main>

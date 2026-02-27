@@ -64,6 +64,78 @@ function hello_elementor_child_force_contact_template( $template ) {
 add_filter( 'template_include', 'hello_elementor_child_force_contact_template', 5 );
 
 /**
+ * Forzar single-project.php para CPT project (evitar que Elementor Theme Builder lo sustituya).
+ */
+function hello_elementor_child_force_cpt_project_template( $template ) {
+	if ( is_singular( 'project' ) ) {
+		$single = get_stylesheet_directory() . '/single-project.php';
+		if ( file_exists( $single ) ) {
+			return $single;
+		}
+	}
+	return $template;
+}
+add_filter( 'template_include', 'hello_elementor_child_force_cpt_project_template', 3 );
+
+/**
+ * Forzar plantilla Project Single cuando la página tiene slug que coincide con un proyecto.
+ * Así el project detail siempre incluye navbar y footer SPD.
+ */
+function hello_elementor_child_force_project_single_template( $template ) {
+	if ( ! is_singular( 'page' ) ) {
+		return $template;
+	}
+	$slug = get_post_field( 'post_name', get_queried_object_id() );
+	if ( empty( $slug ) ) {
+		return $template;
+	}
+	$projects = include get_stylesheet_directory() . '/inc/projects-data.php';
+	foreach ( $projects as $p ) {
+		if ( isset( $p['slug'] ) && $p['slug'] === $slug ) {
+			$project_template = get_stylesheet_directory() . '/template-single-project.php';
+			if ( file_exists( $project_template ) ) {
+				return $project_template;
+			}
+			break;
+		}
+	}
+	return $template;
+}
+add_filter( 'template_include', 'hello_elementor_child_force_project_single_template', 6 );
+
+/**
+ * URL del project detail: página por slug, o CPT project por slug / slug-project.
+ */
+function spd_project_page_url( $slug ) {
+	if ( empty( $slug ) ) {
+		return home_url( '/' );
+	}
+	$page = get_page_by_path( $slug );
+	if ( $page ) {
+		return get_permalink( $page );
+	}
+	$project_post = get_posts( array(
+		'post_type'      => 'project',
+		'name'           => $slug,
+		'posts_per_page' => 1,
+		'post_status'    => 'publish',
+	) );
+	if ( ! empty( $project_post ) ) {
+		return get_permalink( $project_post[0] );
+	}
+	$project_post = get_posts( array(
+		'post_type'      => 'project',
+		'name'           => $slug . '-project',
+		'posts_per_page' => 1,
+		'post_status'    => 'publish',
+	) );
+	if ( ! empty( $project_post ) ) {
+		return get_permalink( $project_post[0] );
+	}
+	return home_url( '/projects/' . $slug . '/' );
+}
+
+/**
  * Navbar y footer SPD en todo el sitio: Inter, base, layout, components, navbar + navbar.js.
  * Se cargan en todas las páginas del front para que header.php y footer.php del tema hijo los muestren bien.
  * Se desencola el header-footer.css del tema padre para evitar que sus estilos globales pisen los nuestros.
@@ -231,14 +303,16 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_spd_header_footer', 999 );
 
 /**
- * Assets solo para plantillas Homepage, Projects y Contact: carousel, pages, homepage.js, contact-us.css.
+ * Assets para plantillas Homepage, Projects, Contact, Project Single (página) y CPT project (single-project.php).
  */
 function hello_elementor_child_enqueue_spd_template_assets() {
-	$is_homepage = is_page_template( 'template-custom-homepage.php' );
-	$is_projects = is_page_template( 'template-projects.php' );
+	$is_homepage       = is_page_template( 'template-custom-homepage.php' );
+	$is_projects       = is_page_template( 'template-projects.php' );
+	$is_single_project = is_page_template( 'template-single-project.php' );
+	$is_cpt_project    = is_singular( 'project' );
 	$is_contact_page_slug = is_page() && get_post_field( 'post_name', get_queried_object_id() ) === 'contact-us-2';
-	$is_contact = is_page_template( 'template-contact-us.php' ) || $is_contact_page_slug;
-	if ( ! $is_homepage && ! $is_projects && ! $is_contact ) {
+	$is_contact        = is_page_template( 'template-contact-us.php' ) || $is_contact_page_slug;
+	if ( ! $is_homepage && ! $is_projects && ! $is_contact && ! $is_single_project && ! $is_cpt_project ) {
 		return;
 	}
 	$path = get_stylesheet_directory();
@@ -296,6 +370,39 @@ function hello_elementor_child_enqueue_spd_template_assets() {
 				array( 'hello-child-pages' ),
 				filemtime( $contact_css )
 			);
+		}
+	}
+
+	if ( $is_single_project || $is_cpt_project ) {
+		$project_css = $path . '/css/pages/project.css';
+		if ( file_exists( $project_css ) ) {
+			wp_enqueue_style(
+				'hello-child-project',
+				$uri . '/css/pages/project.css',
+				array( 'hello-child-pages' ),
+				filemtime( $project_css )
+			);
+		}
+		$project_single_js = $path . '/js/pages/project-single.js';
+		if ( file_exists( $project_single_js ) ) {
+			wp_enqueue_script(
+				'hello-child-project-single',
+				$uri . '/js/pages/project-single.js',
+				array( 'hello-child-carousel', 'hello-child-navbar' ),
+				filemtime( $project_single_js ),
+				true
+			);
+			$projects  = include $path . '/inc/projects-data.php';
+			$images    = array();
+			$excerpts  = array();
+			foreach ( $projects as $p ) {
+				if ( ! empty( $p['slug'] ) ) {
+					$images[ $p['slug'] ]   = isset( $p['image'] ) ? $p['image'] : '';
+					$excerpts[ $p['slug'] ] = isset( $p['excerpt'] ) ? $p['excerpt'] : '';
+				}
+			}
+			wp_localize_script( 'hello-child-project-single', 'projectsImages', $images );
+			wp_localize_script( 'hello-child-project-single', 'projectsExcerpts', $excerpts );
 		}
 	}
 }

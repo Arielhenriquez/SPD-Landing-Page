@@ -45,6 +45,7 @@
     }
   };
 
+  window.projectsMenu = projectsMenu;
   var firstCategoryId = "education";
 
   function renderMegaPanel(panelId) {
