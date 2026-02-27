@@ -403,6 +403,22 @@ function hello_elementor_child_enqueue_spd_template_assets() {
 			}
 			wp_localize_script( 'hello-child-project-single', 'projectsImages', $images );
 			wp_localize_script( 'hello-child-project-single', 'projectsExcerpts', $excerpts );
+
+			$projects_data = array();
+			foreach ( $projects as $p ) {
+				if ( empty( $p['slug'] ) ) {
+					continue;
+				}
+				$slug = $p['slug'];
+				$projects_data[ $slug ] = array(
+					'slug'    => $slug,
+					'title'   => isset( $p['title'] ) ? $p['title'] : ( isset( $p['label'] ) ? $p['label'] : $slug ),
+					'excerpt' => isset( $p['excerpt'] ) ? $p['excerpt'] : '',
+					'image'   => isset( $p['image'] ) ? $p['image'] : '',
+					'url'     => spd_project_page_url( $slug ),
+				);
+			}
+			wp_localize_script( 'hello-child-project-single', 'projectsData', $projects_data );
 		}
 	}
 }

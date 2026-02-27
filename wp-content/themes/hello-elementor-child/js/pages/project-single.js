@@ -1,6 +1,7 @@
 /**
  * Project detail page - Related Projects carousel.
- * Uses projectsMenu (navbar), filters out current project, renders full cards.
+ * Fuente primaria: window.projectsData (todos los proyectos, expuesto por functions.php).
+ * Fallback: window.projectsMenu + window.projectsImages + window.projectsExcerpts (navbar).
  */
 (function () {
   "use strict";
@@ -31,39 +32,53 @@
     return div.innerHTML;
   }
 
-  function init() {
-    var mount = document.getElementById("related-projects-mount");
-    if (!mount) return;
+  function buildProjects() {
+    /* --- Fuente primaria: projectsData (todos los proyectos) --- */
+    if (window.projectsData && typeof window.projectsData === "object") {
+      return Object.values(window.projectsData).map(function (p) {
+        return {
+          slug:    p.slug    || "",
+          label:   p.title   || p.label || "",
+          excerpt: p.excerpt || "",
+          image:   p.image   || "",
+          url:     p.url     || "",
+        };
+      });
+    }
 
+    /* --- Fallback: projectsMenu + projectsImages + projectsExcerpts --- */
     var menu = window.projectsMenu;
-    if (!menu || typeof menu !== "object") return;
+    if (!menu || typeof menu !== "object") return [];
 
-    var allProjects = Object.values(menu).flatMap(function (cat) {
-      return (cat && cat.items) ? cat.items : [];
-    });
-    if (allProjects.length === 0) return;
-
-    var currentSlug = getCurrentSlug();
-    var filtered = currentSlug
-      ? allProjects.filter(function (item) { return item.slug !== currentSlug; })
-      : allProjects;
-
-    var base = (window.projectPageBase != null ? window.projectPageBase : "/projects/");
-    if (base && base.slice(-1) !== "/") base += "/";
-    var suffix = typeof window.projectLinkSuffix !== "undefined" ? window.projectLinkSuffix : "";
     var images   = window.projectsImages   || {};
     var excerpts = window.projectsExcerpts || {};
-    var urls     = window.projectsUrls     || {};
+    var base     = window.projectPageBase  != null ? window.projectPageBase : "/projects/";
+    if (base && base.slice(-1) !== "/") base += "/";
+    var suffix = typeof window.projectLinkSuffix !== "undefined" ? window.projectLinkSuffix : "";
 
+    return Object.values(menu).flatMap(function (cat) {
+      return (cat && cat.items) ? cat.items : [];
+    }).map(function (p) {
+      var slug = p.slug || "";
+      return {
+        slug:    slug,
+        label:   p.label || p.title || "",
+        excerpt: excerpts[slug] || "",
+        image:   images[slug]   || "",
+        url:     base + slug + suffix,
+      };
+    });
+  }
+
+  function buildHtml(projects) {
     var html = "";
-    for (var i = 0; i < filtered.length; i++) {
-      var p      = filtered[i];
-      var slug   = p.slug || "";
-      var label  = p.label || p.title || "";
-      var excerpt = (excerpts[slug] || "").trim();
-      if (excerpt.length > 120) excerpt = excerpt.substring(0, 117) + "...";
-      var img  = (images[slug] || "").trim() || PLACEHOLDER;
-      var href = urls[slug] || (base + slug + suffix);
+    for (var i = 0; i < projects.length; i++) {
+      var p       = projects[i];
+      var label   = p.label;
+      var excerpt = p.excerpt.trim();
+      if (excerpt.length > 130) excerpt = excerpt.substring(0, 127) + "...";
+      var img  = p.image.trim() || PLACEHOLDER;
+      var href = p.url || "#";
 
       html += "<div class=\"c-carousel__slide\">";
       html += "<article class=\"related-card\">";
@@ -78,20 +93,59 @@
       html += "</article>";
       html += "</div>";
     }
+    return html;
+  }
 
+  function reinitCarousel(carouselEl, track) {
+    if (!window.Carousel || typeof window.Carousel.init !== "function") return;
+
+    /* Destruir instancia previa para que autoInit no la saltee */
+    if (carouselEl && carouselEl._carouselInstance) {
+      if (typeof carouselEl._carouselInstance.destroy === "function") {
+        carouselEl._carouselInstance.destroy();
+      }
+      carouselEl._carouselInstance = null;
+    }
+
+    /* Resetear transform residual del track */
+    if (track) {
+      track.style.transform = "";
+    }
+
+    requestAnimationFrame(function () {
+      window.Carousel.init();
+    });
+  }
+
+  function init() {
+    var mount = document.getElementById("related-projects-mount");
+    if (!mount) return;
+
+    var all = buildProjects();
+    if (all.length === 0) return;
+
+    var currentSlug = getCurrentSlug();
+    /* Normalizar: quitar sufijo "-project" para comparar con slugs del data */
+    var normalizedCurrent = currentSlug && currentSlug.slice(-8) === "-project"
+      ? currentSlug.slice(0, -8)
+      : currentSlug;
+    var filtered = normalizedCurrent
+      ? all.filter(function (p) {
+          var s = p.slug && p.slug.slice(-8) === "-project" ? p.slug.slice(0, -8) : p.slug;
+          return s !== normalizedCurrent;
+        })
+      : all;
+    if (filtered.length === 0) return;
+
+    var html  = buildHtml(filtered);
     var track = document.getElementById("project-related-track")
       || mount.querySelector(".c-carousel__track");
 
-    if (track) {
-      track.innerHTML = html;
-      if (window.Carousel) {
-        if (typeof window.Carousel.initAll === "function") {
-          window.Carousel.initAll();
-        } else if (typeof window.Carousel.init === "function") {
-          window.Carousel.init();
-        }
-      }
-    }
+    if (!track) return;
+
+    var carouselEl = mount.querySelector(".c-carousel");
+    track.innerHTML = html;
+    reinitCarousel(carouselEl, track);
   }
 
   if (document.readyState === "loading") {
