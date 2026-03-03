@@ -27,19 +27,19 @@
     municipal: {
       label: "Municipal & Healthcare",
       items: [
-        { label: "MPD 4th District HQ", slug: "mpd-4th-district-hq" }
+        { label: "MPD 4th District HQ", slug: "mpd-4th-district-headquarters" }
       ]
     },
     "gov-housing": {
       label: "Government Housing",
       items: [
-        { label: "Forest Ridge and The Vistas Apartments Renovations", slug: "forest-ridge-and-the-vistas" }
+        { label: "Forest Ridge and The Vistas Apartments Renovations", slug: "forest-ridge-and-the-vistas-apartments-renovations" }
       ]
     },
     recreational: {
       label: "Recreational Facilities",
       items: [
-        { label: "Sherwood Recreation Center Exterior Improvements", slug: "sherwood-recreation-center" },
+        { label: "Sherwood Recreation Center Exterior Improvements", slug: "sherwood-recreation-center-exterior-improvements" },
         { label: "Randall Recreation Center Project", slug: "randall-recreation-center" }
       ]
     }
@@ -57,6 +57,7 @@
     for (var i = 0; i < data.items.length; i++) {
       var item = data.items[i];
       var href = item.slug ? base + item.slug + suffix : base;
+      if (suffix === "" && href.slice(-1) !== "/") href += "/";
       html += '<a href="' + escapeHtml(href) + '">' + escapeHtml(item.label) + "</a>";
     }
     return html;

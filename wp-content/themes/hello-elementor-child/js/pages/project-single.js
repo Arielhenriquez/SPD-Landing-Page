@@ -60,12 +60,14 @@
       return (cat && cat.items) ? cat.items : [];
     }).map(function (p) {
       var slug = p.slug || "";
+      var href = base + slug + suffix;
+      if (suffix === "" && href.slice(-1) !== "/") href += "/";
       return {
         slug:    slug,
         label:   p.label || p.title || "",
         excerpt: excerpts[slug] || "",
         image:   images[slug]   || "",
-        url:     base + slug + suffix,
+        url:     href,
       };
     });
   }
@@ -104,7 +106,7 @@
       if (typeof carouselEl._carouselInstance.destroy === "function") {
         carouselEl._carouselInstance.destroy();
       }
-      carouselEl._carouselInstance = null;
+      delete carouselEl._carouselInstance;
     }
 
     /* Resetear transform residual del track */

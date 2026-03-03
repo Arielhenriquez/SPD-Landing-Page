@@ -31,7 +31,7 @@ return array(
 	),
 	array(
 		'id'       => 'mpd',
-		'slug'     => 'mpd-4th-district-hq',
+		'slug'     => 'mpd-4th-district-headquarters',
 		'title'    => 'MPD 4th District HQ',
 		'category' => 'Municipal & Healthcare',
 		'category_label' => 'Municipal & Healthcare',
@@ -41,7 +41,7 @@ return array(
 	),
 	array(
 		'id'       => 'forest-ridge',
-		'slug'     => 'forest-ridge-and-the-vistas',
+		'slug'     => 'forest-ridge-and-the-vistas-apartments-renovations',
 		'title'    => 'Forest Ridge and The Vistas Apartments Renovations',
 		'category' => 'Government Housing',
 		'category_label' => 'Government Housing',
@@ -51,7 +51,7 @@ return array(
 	),
 	array(
 		'id'       => 'sherwood',
-		'slug'     => 'sherwood-recreation-center',
+		'slug'     => 'sherwood-recreation-center-exterior-improvements',
 		'title'    => 'Sherwood Recreation Center Exterior Improvements',
 		'category' => 'Recreational Facilities',
 		'category_label' => 'Recreational Facilities',

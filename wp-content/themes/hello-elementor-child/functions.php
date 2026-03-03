@@ -75,33 +75,52 @@ function hello_elementor_child_force_cpt_project_template( $template ) {
 	}
 	return $template;
 }
-add_filter( 'template_include', 'hello_elementor_child_force_cpt_project_template', 3 );
+add_filter( 'template_include', 'hello_elementor_child_force_cpt_project_template', 15 );
 
 /**
- * Forzar plantilla Project Single cuando la página tiene slug que coincide con un proyecto.
- * Así el project detail siempre incluye navbar y footer SPD.
+ * Forzar plantilla Project Single cuando el slug de la página — o el path de la URL — coincide
+ * con un proyecto en projects-data.php. Cubre dos casos:
+ *   1) La página WP existe como child de /projects/ → is_singular('page') + slug del post.
+ *   2) La página WP NO existe pero la URL es /projects/{slug} → fallback por REQUEST_URI.
+ * Prioridad 20: corre después de Elementor (≈12) para sobreescribir si hace falta.
  */
 function hello_elementor_child_force_project_single_template( $template ) {
-	if ( ! is_singular( 'page' ) ) {
+	$stylesheet_dir   = get_stylesheet_directory();
+	$project_template = $stylesheet_dir . '/template-single-project.php';
+	if ( ! file_exists( $project_template ) ) {
 		return $template;
 	}
-	$slug = get_post_field( 'post_name', get_queried_object_id() );
-	if ( empty( $slug ) ) {
-		return $template;
-	}
-	$projects = include get_stylesheet_directory() . '/inc/projects-data.php';
-	foreach ( $projects as $p ) {
-		if ( isset( $p['slug'] ) && $p['slug'] === $slug ) {
-			$project_template = get_stylesheet_directory() . '/template-single-project.php';
-			if ( file_exists( $project_template ) ) {
-				return $project_template;
+
+	$projects = include $stylesheet_dir . '/inc/projects-data.php';
+
+	/* --- Caso 1: página WP cuyo post_name coincide con un slug de proyecto --- */
+	if ( is_singular( 'page' ) ) {
+		$slug = get_post_field( 'post_name', get_queried_object_id() );
+		if ( $slug ) {
+			foreach ( $projects as $p ) {
+				if ( isset( $p['slug'] ) && $p['slug'] === $slug ) {
+					return $project_template;
+				}
 			}
-			break;
 		}
 	}
+
+	/* --- Caso 2: URL del tipo /projects/{slug} aunque no exista página WP --- */
+	$uri_path = isset( $_SERVER['REQUEST_URI'] )
+		? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH )
+		: '';
+	if ( $uri_path && preg_match( '#/projects/([^/?#]+)/?$#', $uri_path, $m ) ) {
+		$url_slug = $m[1];
+		foreach ( $projects as $p ) {
+			if ( isset( $p['slug'] ) && $p['slug'] === $url_slug ) {
+				return $project_template;
+			}
+		}
+	}
+
 	return $template;
 }
-add_filter( 'template_include', 'hello_elementor_child_force_project_single_template', 6 );
+add_filter( 'template_include', 'hello_elementor_child_force_project_single_template', 20 );
 
 /**
  * URL del project detail: página por slug, o CPT project por slug / slug-project.

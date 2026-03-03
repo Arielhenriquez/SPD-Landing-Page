@@ -15,15 +15,19 @@ $projects_data = include get_stylesheet_directory() . '/inc/projects-data.php';
       <div class="c-carousel" data-carousel data-carousel-loop="true" data-carousel-dots="false" data-carousel-breakpoints='{"0":1,"600":2,"900":3}' aria-label="Featured projects">
         <div class="c-carousel__viewport">
           <div class="c-carousel__track">
-            <?php foreach ( $projects_data as $p ) : ?>
+            <?php foreach ( $projects_data as $p ) :
+              $p_link = function_exists( 'spd_project_page_url' ) ? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' ) : home_url( '/projects/' );
+            ?>
               <div class="c-carousel__slide">
                 <article class="c-carousel__card">
                   <div class="c-carousel__card-image">
-                    <img src="<?php echo esc_url( $p['image'] ); ?>" alt="">
+                    <a href="<?php echo esc_url( $p_link ); ?>">
+                      <img src="<?php echo esc_url( $p['image'] ); ?>" alt="<?php echo esc_attr( $p['title'] ); ?>">
+                    </a>
                   </div>
                   <div class="c-carousel__card-body">
                     <p class="c-carousel__card-category"><?php echo esc_html( $p['category_label'] ?: $p['category'] ); ?></p>
-                    <h3 class="c-carousel__card-title"><?php echo esc_html( $p['title'] ); ?></h3>
+                    <h3 class="c-carousel__card-title"><a href="<?php echo esc_url( $p_link ); ?>"><?php echo esc_html( $p['title'] ); ?></a></h3>
                   </div>
                 </article>
               </div>
@@ -105,34 +109,5 @@ $projects_data = include get_stylesheet_directory() . '/inc/projects-data.php';
       </div>
     </section>
 
-    <section class="content-section" aria-label="Related Projects" style="padding-bottom: 4rem;">
-      <h2 class="section-title">Related Projects</h2>
-      <div class="c-carousel" data-carousel data-carousel-loop="true" data-carousel-dots="false" data-carousel-breakpoints='{"0":1,"768":2}' aria-label="Related projects">
-        <div class="c-carousel__viewport">
-          <div class="c-carousel__track">
-            <?php foreach ( $projects_data as $p ) :
-              $excerpt = ! empty( $p['excerpt'] ) ? ( strlen( $p['excerpt'] ) > 120 ? substr( $p['excerpt'], 0, 117 ) . '...' : $p['excerpt'] ) : '';
-              $link = function_exists( 'spd_project_page_url' ) ? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' ) : home_url( '/projects/' );
-            ?>
-              <div class="c-carousel__slide">
-                <article class="related-card">
-                  <a href="<?php echo esc_url( $link ); ?>" class="thumb">
-                    <img src="<?php echo esc_url( $p['image'] ); ?>" alt="<?php echo esc_attr( $p['title'] ); ?>">
-                  </a>
-                  <div class="body">
-                    <h3><?php echo esc_html( $p['title'] ); ?></h3>
-                    <?php if ( $excerpt ) : ?><p><?php echo esc_html( $excerpt ); ?></p><?php endif; ?>
-                    <a href="<?php echo esc_url( $link ); ?>" class="link">Read more →</a>
-                  </div>
-                </article>
-              </div>
-            <?php endforeach; ?>
-          </div>
-        </div>
-        <button class="c-carousel__btn c-carousel__btn--prev" type="button" aria-label="Previous"></button>
-        <button class="c-carousel__btn c-carousel__btn--next" type="button" aria-label="Next"></button>
-        <div class="c-carousel__dots" aria-label="Pagination"></div>
-      </div>
-    </section>
   </div>
 </main>

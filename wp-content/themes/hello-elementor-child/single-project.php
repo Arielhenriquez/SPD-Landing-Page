@@ -21,12 +21,29 @@ foreach ( $projects as $p ) {
 		break;
 	}
 }
+/* Intento 2: slug sin sufijo "-project" (randall-recreation-center-project → randall-recreation-center) */
 if ( ! $project && substr( $post_slug, -8 ) === '-project' ) {
 	$slug_alt = substr( $post_slug, 0, -8 );
 	foreach ( $projects as $p ) {
 		if ( isset( $p['slug'] ) && $p['slug'] === $slug_alt ) {
 			$project = $p;
 			break;
+		}
+	}
+}
+
+/* Intento 3: derivar slug desde URL /project(s)/{slug} (CPT sin página WP o permalink raro) */
+if ( ! $project ) {
+	$uri_path = isset( $_SERVER['REQUEST_URI'] )
+		? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH )
+		: '';
+	if ( $uri_path && preg_match( '#/projects?/([^/?#]+)/?$#', $uri_path, $m ) ) {
+		$url_slug = $m[1];
+		foreach ( $projects as $p ) {
+			if ( isset( $p['slug'] ) && $p['slug'] === $url_slug ) {
+				$project = $p;
+				break;
+			}
 		}
 	}
 }

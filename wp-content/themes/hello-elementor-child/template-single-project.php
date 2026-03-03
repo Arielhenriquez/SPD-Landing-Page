@@ -13,10 +13,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 $page_slug = get_post_field( 'post_name', get_queried_object_id() );
 $projects  = include get_stylesheet_directory() . '/inc/projects-data.php';
 $project   = null;
+
+/* Búsqueda primaria: slug del post WP */
 foreach ( $projects as $p ) {
 	if ( isset( $p['slug'] ) && $p['slug'] === $page_slug ) {
 		$project = $p;
 		break;
+	}
+}
+
+/* Fallback: derivar slug desde la URL /projects/{slug} cuando no hay página WP */
+if ( ! $project ) {
+	$uri_path = isset( $_SERVER['REQUEST_URI'] )
+		? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH )
+		: '';
+	if ( $uri_path && preg_match( '#/projects/([^/?#]+)/?$#', $uri_path, $m ) ) {
+		$url_slug = $m[1];
+		foreach ( $projects as $p ) {
+			if ( isset( $p['slug'] ) && $p['slug'] === $url_slug ) {
+				$project = $p;
+				break;
+			}
+		}
 	}
 }
 
