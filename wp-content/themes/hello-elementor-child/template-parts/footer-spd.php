@@ -5,10 +5,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-$home         = home_url( '/' );
-$projects_url = home_url( '/projects/' );
-$contact_url  = home_url( '/contact-us-2/' );
-$logo_url     = 'https://qmbqbrt0dq.wpdns.site/wp-content/uploads/2026/01/logo.webp';
+$home             = home_url( '/' );
+$projects_url     = home_url( '/projects/' );
+$approach_url     = function_exists( 'spd_page_url_by_slug' ) ? spd_page_url_by_slug( 'approach-expertise' ) : home_url( '/approach-expertise/' );
+$company_info_url = function_exists( 'spd_page_url_by_slug' ) ? spd_page_url_by_slug( 'company-info' ) : home_url( '/company-info/' );
+$contact_url      = function_exists( 'spd_page_url_by_slug' ) ? spd_page_url_by_slug( 'contact-us-2' ) : home_url( '/contact-us-2/' );
+$logo_url         = 'https://qmbqbrt0dq.wpdns.site/wp-content/uploads/2026/01/logo.webp';
 ?>
 <footer class="site-footer" id="site-footer" role="contentinfo">
   <div class="layout__container">
@@ -17,9 +19,9 @@ $logo_url     = 'https://qmbqbrt0dq.wpdns.site/wp-content/uploads/2026/01/logo.w
         <img src="<?php echo esc_url( $logo_url ); ?>" alt="SPD Contracting, Inc." class="footer__logo-img" width="779" height="164">
       </a>
       <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="<?php echo esc_url( $company_info_url ); ?>">Company Info</a>
+        <a href="<?php echo esc_url( $approach_url ); ?>">Approach &amp; Expertise</a>
         <a href="<?php echo esc_url( $projects_url ); ?>">Projects</a>
-        <a href="<?php echo esc_url( $home ); ?>#approach">Approach &amp; Expertise</a>
-        <a href="<?php echo esc_url( $home ); ?>#approach">Company Info</a>
         <a href="<?php echo esc_url( $contact_url ); ?>">Contact Us</a>
       </nav>
     </div>

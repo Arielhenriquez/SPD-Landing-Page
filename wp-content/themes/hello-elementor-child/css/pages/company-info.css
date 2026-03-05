@@ -1,0 +1,65 @@
+/* ========== Company Info page ========== */
+.page-company-info {
+  font-family: var(--font-sans);
+  padding-top: var(--header-height);
+}
+
+.company-info-hero {
+  position: relative;
+  min-height: 52vh;
+  display: flex;
+  align-items: flex-end;
+  background: var(--color-navy)
+    url('https://lh3.googleusercontent.com/aida-public/AB6AXuACAkUo9Wgyl_p_SOjZ6MFvAgKrFfuvxaUh0FlhkmgOcUtxMmz3wH8FhbawpjZ1ETKbDljAKxNA5xhtEBCC27H2OLPqeVsRwR8IvTmojPodqWDzrvHfiCSG05n1ZtIPg2Xst6m3cLLoXApPpbUzN2vNzRbku1w-wtcZvE9SmiIgeyoSiOBN6RcmfSbdsFFaj-msC67wKHaDQz2wyBAhZNmm44zSjW1QvoiCHKGGlGwGLnq5MOWEY8tJGYeG_vcMy5rH_xV5g4fjy9cn')
+    center / cover no-repeat;
+  /* full-bleed horizontal */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.company-info-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 48, 96, 0.88), rgba(0, 48, 96, 0.55));
+}
+
+.company-info-hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--container-max, 1200px);
+  margin: 0 auto;
+  padding: 4rem 1.5rem 4rem;
+}
+
+.company-info-hero__title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.company-info-hero__title-script {
+  margin-top: -0.15em;
+  margin-left: 5rem;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .company-info-hero {
+    min-height: 40vh;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .company-info-hero__title-script {
+    margin-left: 3rem;
+  }
+}

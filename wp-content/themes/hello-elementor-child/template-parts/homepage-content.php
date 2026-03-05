@@ -5,9 +5,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-$home = home_url( '/' );
-$projects_url = home_url( '/projects/' );
-$contact_url = home_url( '/contact-us-2/' );
+$home             = home_url( '/' );
+$projects_url     = home_url( '/projects/' );
+$contact_url      = home_url( '/contact-us-2/' );
+$company_info_url = function_exists( 'spd_page_url_by_slug' ) ? spd_page_url_by_slug( 'company-info' ) : home_url( '/company-info/' );
+$approach_url     = function_exists( 'spd_page_url_by_slug' ) ? spd_page_url_by_slug( 'approach-expertise' ) : home_url( '/approach-expertise/' );
 ?>
   <main id="main-content">
     <section class="hero">
@@ -16,7 +18,7 @@ $contact_url = home_url( '/contact-us-2/' );
         <h1 class="hero-title">SPD Contracting</h1>
         <p class="hero-subtitle">Committed to your project</p>
         <div class="hero-buttons">
-          <a href="<?php echo esc_url( $home ); ?>#approach" class="btn btn-primary">ABOUT US &gt;</a>
+          <a href="<?php echo esc_url( $company_info_url ); ?>" class="btn btn-primary">ABOUT US &gt;</a>
           <a href="<?php echo esc_url( $contact_url ); ?>" class="btn btn-primary">CONTACT US &gt;</a>
         </div>
       </div>
@@ -68,32 +70,35 @@ $contact_url = home_url( '/contact-us-2/' );
           </div>
           <a href="<?php echo esc_url( $projects_url ); ?>" class="btn btn-dark">VIEW ALL PROJECTS &gt;</a>
         </div>
-        <div class="projects-carousel">
-          <button type="button" class="carousel-arrow carousel-prev" aria-label="Previous">‹</button>
-          <div class="projects-cards">
-            <article class="project-card">
-              <div class="project-image"></div>
-              <div class="project-caption">
-                <span class="project-category">Government Housing</span>
-                <h4>Forest Ridge and The Vistas Apartments Renovations</h4>
+        <div class="featured-carousel content-section" aria-label="Featured projects">
+          <div class="c-carousel" data-carousel data-carousel-loop="true" data-carousel-dots="false" data-carousel-breakpoints='{"0":1,"600":2,"900":3}' aria-label="Featured projects">
+            <div class="c-carousel__viewport">
+              <div class="c-carousel__track">
+                <?php
+                $projects_data = include get_stylesheet_directory() . '/inc/projects-data.php';
+                foreach ( $projects_data as $p ) :
+                  $p_link = function_exists( 'spd_project_page_url' ) ? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' ) : home_url( '/projects/' );
+                ?>
+                  <div class="c-carousel__slide">
+                    <article class="c-carousel__card">
+                      <div class="c-carousel__card-image">
+                        <a href="<?php echo esc_url( $p_link ); ?>">
+                          <img src="<?php echo esc_url( $p['image'] ); ?>" alt="<?php echo esc_attr( $p['title'] ); ?>">
+                        </a>
+                      </div>
+                      <div class="c-carousel__card-body">
+                        <p class="c-carousel__card-category"><?php echo esc_html( isset( $p['category_label'] ) ? $p['category_label'] : $p['category'] ); ?></p>
+                        <h3 class="c-carousel__card-title"><a href="<?php echo esc_url( $p_link ); ?>"><?php echo esc_html( $p['title'] ); ?></a></h3>
+                      </div>
+                    </article>
+                  </div>
+                <?php endforeach; ?>
               </div>
-            </article>
-            <article class="project-card">
-              <div class="project-image"></div>
-              <div class="project-caption">
-                <span class="project-category">Recreational Facilities</span>
-                <h4>Sherwood Recreation Center Exterior Improvements</h4>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-image"></div>
-              <div class="project-caption">
-                <span class="project-category">Recreational Facilities</span>
-                <h4>Randall Recreation Center Project</h4>
-              </div>
-            </article>
+            </div>
+            <button class="c-carousel__btn c-carousel__btn--prev" type="button" aria-label="Previous"></button>
+            <button class="c-carousel__btn c-carousel__btn--next" type="button" aria-label="Next"></button>
+            <div class="c-carousel__dots" aria-label="Pagination"></div>
           </div>
-          <button type="button" class="carousel-arrow carousel-next" aria-label="Next">›</button>
         </div>
       </div>
     </section>
@@ -104,7 +109,7 @@ $contact_url = home_url( '/contact-us-2/' );
           <div class="services-intro">
             <h2 class="section-label">Approach & Expertise</h2>
             <p>At SPD Contracting, Inc., our comprehensive and integrated approach focuses on project delivery from conception through completion. Leveraging decades of industry experience, we offer specialized expertise and tailored solutions to meet diverse client needs across the D.C. region.</p>
-            <a href="<?php echo esc_url( $home ); ?>#approach" class="btn btn-primary">VIEW ALL SERVICES &gt;</a>
+            <a href="<?php echo esc_url( $approach_url ); ?>" class="btn btn-primary">VIEW ALL SERVICES &gt;</a>
           </div>
           <div class="service-feature">
             <div class="service-image"></div>

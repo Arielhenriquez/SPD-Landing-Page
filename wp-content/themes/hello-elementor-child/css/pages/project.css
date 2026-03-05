@@ -2,8 +2,18 @@
  * project.css - Páginas de proyecto individual: hero, overview (2 cards), gallery, related
  * Look & feel: cards modernas, spacing limpio, Inter, bordes redondeados, sombras suaves.
  */
-.page-project {
+/* Approach single & project single: only hero is dark; rest of page stays light (override body dark from base.css) */
+.page-project,
+.page-approach-single {
   padding-top: var(--header-height);
+  background: var(--color-white);
+}
+
+body.page-project #main-content,
+body.page-approach-single #main-content,
+body.page-project main.project-main,
+body.page-approach-single main.project-main {
+  background: transparent;
 }
 
 /* ========== Hero ========== */

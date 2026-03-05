@@ -16,6 +16,103 @@ function hello_elementor_child_body_class_spd( $classes ) {
 add_filter( 'body_class', 'hello_elementor_child_body_class_spd', 5 );
 
 /**
+ * Register "Approach Single" in the Template dropdown for EVERY post type that has a
+ * template selector — this matches the mechanism Elementor itself uses (see
+ * Elementor\Modules\PageTemplates\Module::add_wp_templates_support).
+ *
+ * Two support flags cover both cases:
+ *   'page-attributes' — the WP-native Template dropdown (classic editor / Quick Edit)
+ *   'elementor'       — Elementor's injected Template dropdown (covers CPTs registered by
+ *                       Elementor Pro or ACF that add 'elementor' support)
+ *
+ * Runs on init at priority 20 so all CPTs are already registered.
+ * Priority 5 on each theme_{type}_templates filter ensures our entry appears before
+ * Elementor (priority 10) overwrites the array.
+ *
+ * Why the key is 'page-templates/template-approach-single.php':
+ *   WordPress stores exactly this string in the _wp_page_template post-meta when the user
+ *   picks the template from the dropdown.  It must match the relative path from the theme root.
+ */
+function hello_elementor_child_add_approach_template_support() {
+	$native_types   = (array) get_post_types_by_support( 'page-attributes' );
+	$elementor_types = (array) get_post_types_by_support( 'elementor' );
+	$all_types = array_unique( array_merge( $native_types, $elementor_types ) );
+
+	foreach ( $all_types as $post_type ) {
+		add_filter(
+			"theme_{$post_type}_templates",
+			'hello_elementor_child_register_approach_template',
+			5  /* before Elementor's priority 10 */
+		);
+	}
+}
+add_action( 'init', 'hello_elementor_child_add_approach_template_support', 20 );
+
+function hello_elementor_child_register_approach_template( $templates ) {
+	$templates['page-templates/template-approach-single.php'] = __( 'Approach Single', 'hello-elementor-child' );
+	return $templates;
+}
+
+/**
+ * DEBUG — approach page diagnostics.
+ *
+ * Fires on the 'wp' action (after main query) and on 'template_include' (last, priority 99).
+ * Output goes to wp-content/debug.log when both WP_DEBUG=true and WP_DEBUG_LOG=true.
+ *
+ * What to look for in the log:
+ *   get_post_type      → the actual CPT slug for these posts (e.g. "approach_expertise")
+ *   _wp_page_template  → what the Template dropdown saved; should be
+ *                        "page-templates/template-approach-single.php" after you pick it
+ *   template_include   → the final PHP file WordPress will load; must end in
+ *                        "page-templates/template-approach-single.php"
+ *
+ * REMOVE OR COMMENT THIS BLOCK once the above values are confirmed correct.
+ */
+function hello_elementor_child_debug_approach_post_type() {
+	if ( is_admin() ) {
+		return;
+	}
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '';
+	if ( ! preg_match( '#/(?:expertise|approach-expertise)/#', $uri ) ) {
+		return;
+	}
+	$qo        = get_queried_object();
+	$qo_id     = get_queried_object_id();
+	$post_type = get_post_type( $qo_id );
+	$post_slug = $qo_id ? get_post_field( 'post_name', $qo_id ) : '';
+	$tpl_meta  = $qo_id ? (string) get_page_template_slug( $qo_id ) : '(no id)';
+
+	error_log( '[SPD Approach Debug] ---- wp action ----' );
+	error_log( '[SPD Approach Debug] URI=' . $uri );
+	error_log( '[SPD Approach Debug] queried_object_id=' . $qo_id );
+	error_log( '[SPD Approach Debug] get_post_type=' . var_export( $post_type, true ) );
+	error_log( '[SPD Approach Debug] post_name=' . $post_slug );
+	error_log( '[SPD Approach Debug] _wp_page_template=' . $tpl_meta );
+	error_log( '[SPD Approach Debug] is_singular(page)=' . var_export( is_singular( 'page' ), true ) );
+	error_log( '[SPD Approach Debug] is_singular()=' . var_export( is_singular(), true ) );
+	if ( $qo ) {
+		error_log( '[SPD Approach Debug] queried_object class=' . get_class( $qo ) );
+	}
+}
+add_action( 'wp', 'hello_elementor_child_debug_approach_post_type' );
+
+/**
+ * DEBUG — log the final template file resolved by template_include (priority 99 = last).
+ * Remove together with the function above once confirmed.
+ */
+function hello_elementor_child_debug_approach_template_include( $template ) {
+	if ( is_admin() ) {
+		return $template;
+	}
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '';
+	if ( preg_match( '#/(?:expertise|approach-expertise)/#', $uri ) ) {
+		error_log( '[SPD Approach Debug] template_include (final)=' . $template );
+	}
+	return $template;
+}
+add_filter( 'template_include', 'hello_elementor_child_debug_approach_template_include', 99 );
+
+/**
  * Evitar que el tema padre encole header-footer.css (usamos nuestro navbar/footer).
  */
 function hello_elementor_child_disable_parent_header_footer_css() {
@@ -123,6 +220,74 @@ function hello_elementor_child_force_project_single_template( $template ) {
 add_filter( 'template_include', 'hello_elementor_child_force_project_single_template', 20 );
 
 /**
+ * Forzar template-approach-single.php cuando el slug de la página coincide con un servicio
+ * de inc/approach-data.php, o cuando la URL es /expertise/{slug} o /approach-expertise/{slug}.
+ *
+ * Detection order (first match wins):
+ *   0. Explicit template meta: _wp_page_template is set to our template file.  This is the
+ *      authoritative signal — the user selected it in WP Admin.  Always honored, beats Elementor.
+ *   1. Slug match: any singular (non-project) whose post_name is a known service slug.
+ *   2. URL fallback: /expertise/{slug} or /approach-expertise/{slug} when no WP object exists.
+ *
+ * Priority 22: runs after project-single (20) and after Elementor's template_include (~10),
+ * so we always get the last word.
+ */
+function hello_elementor_child_force_approach_single_template( $template ) {
+	$stylesheet_dir    = get_stylesheet_directory();
+	/* Canonical path — must match the key stored in _wp_page_template meta by WP. */
+	$approach_template = $stylesheet_dir . '/page-templates/template-approach-single.php';
+	if ( ! file_exists( $approach_template ) ) {
+		return $template;
+	}
+
+	if ( is_singular() && ! is_singular( 'project' ) ) {
+		$post_id = get_queried_object_id();
+
+		/*
+		 * --- Check 0: explicit template meta assignment (highest priority).
+		 * get_page_template_slug() reads _wp_page_template post-meta; works for any post_type,
+		 * not just 'page'.  Accepts both the current canonical path and the legacy root path
+		 * so that posts saved before the file was moved continue to work.
+		 */
+		$meta_val = (string) get_page_template_slug( $post_id );
+		if ( in_array( $meta_val, array(
+			'page-templates/template-approach-single.php',
+			'template-approach-single.php',
+		), true ) ) {
+			return $approach_template;
+		}
+
+		/*
+		 * --- Check 1: post slug is a known service slug.
+		 * Covers CPT posts that haven't had the template manually selected yet.
+		 */
+		$approach_map = include $stylesheet_dir . '/inc/approach-data.php';
+		$slugs        = array_keys( $approach_map );
+		$post_slug    = get_post_field( 'post_name', $post_id );
+		if ( $post_slug && in_array( $post_slug, $slugs, true ) ) {
+			return $approach_template;
+		}
+	}
+
+	/* --- Check 2: URL /expertise/{slug} or /approach-expertise/{slug} (no WP object) --- */
+	$uri_path = isset( $_SERVER['REQUEST_URI'] )
+		? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH )
+		: '';
+	if ( $uri_path && preg_match( '#/(?:expertise|approach-expertise)/([^/?#]+)/?$#', $uri_path, $m ) ) {
+		if ( ! isset( $approach_map ) ) {
+			$approach_map = include $stylesheet_dir . '/inc/approach-data.php';
+			$slugs        = array_keys( $approach_map );
+		}
+		if ( in_array( $m[1], $slugs, true ) ) {
+			return $approach_template;
+		}
+	}
+
+	return $template;
+}
+add_filter( 'template_include', 'hello_elementor_child_force_approach_single_template', 22 );
+
+/**
  * URL del project detail: página por slug, o CPT project por slug / slug-project.
  */
 function spd_project_page_url( $slug ) {
@@ -155,6 +320,20 @@ function spd_project_page_url( $slug ) {
 }
 
 /**
+ * URL de una página WP por slug (ej: company-info, approach-expertise). Sin hardcode de dominio.
+ */
+function spd_page_url_by_slug( $slug ) {
+	if ( empty( $slug ) ) {
+		return home_url( '/' );
+	}
+	$page = get_page_by_path( $slug, OBJECT, 'page' );
+	if ( $page ) {
+		return get_permalink( $page );
+	}
+	return home_url( '/' . $slug . '/' );
+}
+
+/**
  * Navbar y footer SPD en todo el sitio: Inter, base, layout, components, navbar + navbar.js.
  * Se cargan en todas las páginas del front para que header.php y footer.php del tema hijo los muestren bien.
  * Se desencola el header-footer.css del tema padre para evitar que sus estilos globales pisen los nuestros.
@@ -172,6 +351,15 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 		array(),
 		null
 	);
+
+	if ( ! wp_style_is( 'hello-child-material-icons', 'enqueued' ) ) {
+		wp_enqueue_style(
+			'hello-child-material-icons',
+			'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
+			array(),
+			null
+		);
+	}
 
 	$header_footer_styles = array(
 		'base'       => '/css/base.css',
@@ -215,6 +403,9 @@ function hello_elementor_child_enqueue_spd_header_footer() {
 			'after'
 		);
 	}
+
+	/* Remove white gap above navbar: WP adds margin-top to html when admin bar shows; we override globally */
+	wp_add_inline_style( 'hello-child-navbar', 'html { margin-top: 0 !important; }' );
 
 	/* Forzar navbar, mega menú Projects y footer por encima de Elementor/tema padre */
 	$navbar_override = '
@@ -323,15 +514,55 @@ add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_spd_header_foot
 
 /**
  * Assets para plantillas Homepage, Projects, Contact, Project Single (página) y CPT project (single-project.php).
+ *
+ * Service pages (Approach & Expertise subpages) are detected BEFORE project-single so that
+ * $is_approach_single can exclude them from $is_single_project.  This prevents project-single.js
+ * (which populates the page with project data) from loading on service pages.
  */
 function hello_elementor_child_enqueue_spd_template_assets() {
-	$is_homepage       = is_page_template( 'template-custom-homepage.php' );
-	$is_projects       = is_page_template( 'template-projects.php' );
-	$is_single_project = is_page_template( 'template-single-project.php' );
-	$is_cpt_project    = is_singular( 'project' );
+	$is_homepage    = is_page_template( 'template-custom-homepage.php' );
+	$is_projects    = is_page_template( 'template-projects.php' );
+	$is_cpt_project = is_singular( 'project' );
 	$is_contact_page_slug = is_page() && get_post_field( 'post_name', get_queried_object_id() ) === 'contact-us-2';
-	$is_contact        = is_page_template( 'template-contact-us.php' ) || $is_contact_page_slug;
-	if ( ! $is_homepage && ! $is_projects && ! $is_contact && ! $is_single_project && ! $is_cpt_project ) {
+	$is_contact     = is_page_template( 'template-contact-us.php' ) || $is_contact_page_slug;
+	$is_company_info = is_page_template( 'template-company-info.php' );
+	$is_approach    = is_page_template( 'template-approach.php' );
+
+	/* --- Detect service (Approach & Expertise) subpages ---
+	 * Service pages are WP Pages whose post_name is a known service slug, OR any URL that matches
+	 * /expertise/{slug} or /approach-expertise/{slug}.  We resolve this BEFORE $is_single_project
+	 * so service pages are never mistakenly treated as project-single.
+	 */
+	$_service_slugs = array( 'preconstruction', 'construction-management', 'project-management', 'subcontracting', 'design-build', 'construction-manager-at-risk', 'self-perform' );
+
+	/* Check 1: page template meta — check both the canonical path and the legacy root shim */
+	$is_approach_single = is_page_template( 'page-templates/template-approach-single.php' )
+	                   || is_page_template( 'template-approach-single.php' );
+
+	/* Check 2: any singular (Page or CPT, excluding 'project') whose slug is a service slug */
+	if ( ! $is_approach_single && is_singular() && ! is_singular( 'project' ) ) {
+		$_slug = get_post_field( 'post_name', get_queried_object_id() );
+		if ( $_slug && in_array( $_slug, $_service_slugs, true ) ) {
+			$is_approach_single = true;
+		}
+	}
+
+	/* Check 3: URL-based fallback — /expertise/{slug} or /approach-expertise/{slug} */
+	if ( ! $is_approach_single ) {
+		$_uri = isset( $_SERVER['REQUEST_URI'] ) ? parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ) : '';
+		if ( $_uri && preg_match( '#/(?:expertise|approach-expertise)/([^/?#]+)/?$#', $_uri, $_um ) ) {
+			if ( in_array( $_um[1], $_service_slugs, true ) ) {
+				$is_approach_single = true;
+			}
+		}
+	}
+
+	/* is_page_template('template-single-project.php') reads the _wp_page_template post-meta,
+	 * which stays set even after our template_include filter overrides the actual file.
+	 * Explicitly exclude service pages so their meta value never triggers project-single assets. */
+	$is_single_project = ! $is_approach_single && is_page_template( 'template-single-project.php' );
+
+	if ( ! $is_homepage && ! $is_projects && ! $is_contact && ! $is_single_project && ! $is_cpt_project && ! $is_company_info && ! $is_approach && ! $is_approach_single ) {
 		return;
 	}
 	$path = get_stylesheet_directory();
@@ -373,7 +604,7 @@ function hello_elementor_child_enqueue_spd_template_assets() {
 			wp_enqueue_script(
 				'hello-child-homepage',
 				$uri . '/js/homepage.js',
-				array( 'hello-child-navbar' ),
+				array( 'hello-child-carousel', 'hello-child-navbar' ),
 				filemtime( $homepage_js ),
 				true
 			);
@@ -392,7 +623,8 @@ function hello_elementor_child_enqueue_spd_template_assets() {
 		}
 	}
 
-	if ( $is_single_project || $is_cpt_project ) {
+	/* project.css is shared by project-single AND approach-single (both use .project-hero etc.) */
+	if ( $is_single_project || $is_cpt_project || $is_approach_single ) {
 		$project_css = $path . '/css/pages/project.css';
 		if ( file_exists( $project_css ) ) {
 			wp_enqueue_style(
@@ -402,6 +634,10 @@ function hello_elementor_child_enqueue_spd_template_assets() {
 				filemtime( $project_css )
 			);
 		}
+	}
+
+	/* project-single.js populates the page with project data — NEVER load it on service pages */
+	if ( $is_single_project || $is_cpt_project ) {
 		$project_single_js = $path . '/js/pages/project-single.js';
 		if ( file_exists( $project_single_js ) ) {
 			wp_enqueue_script(

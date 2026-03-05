@@ -24,15 +24,38 @@
 
 html {
   scroll-behavior: smooth;
+  margin-top: 0 !important;
+  padding: 0;
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-dark);
-  background: var(--color-white);
+  /* Match navbar so margin-top under fixed header is not a visible white gap */
+  background: var(--color-dark);
+}
+
+/* Remove intermittent white gap: WP adds margin-top to html when admin bar shows (logged-in only).
+   We take control: no html margin; when admin bar is present, offset fixed header and body instead. */
+body.admin-bar .site-header {
+  top: 32px;
+}
+@media screen and (max-width: 782px) {
+  body.admin-bar .site-header {
+    top: 46px;
+  }
+}
+body.admin-bar {
+  padding-top: 32px;
+}
+@media screen and (max-width: 782px) {
+  body.admin-bar {
+    padding-top: 46px;
+  }
 }
 
 img {
@@ -66,4 +89,19 @@ ul {
 .site-footer *::before,
 .site-footer *::after {
   box-sizing: border-box;
+}
+
+/* Material Symbols Outlined — disponible en todo el theme */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
