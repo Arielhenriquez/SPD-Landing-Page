@@ -1327,6 +1327,50 @@ body.page-projects #main-content {
 }
 
 /* ---------- Executive Leadership ---------- */
+.leadership-intro {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.leadership-intro__media {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.leadership-intro__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.leadership-intro__content .section-title {
+  margin-top: 0;
+}
+
+.leadership-intro__content p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: var(--color-gray);
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.leadership-intro__content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .leadership-intro {
+    grid-template-columns: 1fr;
+  }
+}
+
 .leadership-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

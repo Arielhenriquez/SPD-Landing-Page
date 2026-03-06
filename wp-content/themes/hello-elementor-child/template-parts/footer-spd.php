@@ -26,10 +26,10 @@ $logo_url         = 'https://qmbqbrt0dq.wpdns.site/wp-content/uploads/2026/01/lo
       </nav>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copyright">Copyright © <?php echo esc_html( date( 'Y' ) ); ?> SPD Contracting, Inc.</p>
+      <p class="footer__copyright">Copyright © <?php echo esc_html( date( 'Y' ) ); ?> Construction Company. All rights reserved</p>
       <div class="footer__contact">
         <span>1018 Bladensburg Rd NE - Washington, DC 20002</span>
-        <span>202-334-5222</span>
+        <span>202-934-5222</span>
         <a href="mailto:admin@spdcon-inc.com">admin@spdcon-inc.com</a>
       </div>
     </div>

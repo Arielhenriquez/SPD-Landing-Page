@@ -118,17 +118,11 @@ $img_base = 'https://lh3.googleusercontent.com/aida-public/';
         </div>
         <div class="company-story__content">
           <p>
-            SPD Contracting was founded in Washington, DC with a single conviction: that small,
-            community-rooted firms can deliver world-class construction for the institutions that matter
-            most — schools, recreation centers, government offices, and affordable housing. What began
-            as a lean team of dedicated tradespeople has grown into a full-service construction company
-            trusted by DC's most demanding public agencies.
-          </p>
+SPD Contracting, Inc. is a local construction company proudly headquartered in Washington, D.C.'s Ward 5. We are a minority-owned business and certified as a CBE, SBE, LBE, DZE, DBE, ROB, and EIE by DSLBD, as well as a Section 3 company certified by DHCD. Specializing in construction management, general contracting, and design-build services, we deliver exceptional results across educational, municipal, multifamily, and commercial facilities. With extensive self-performance capabilities, our experienced in-house teams provide superior craftsmanship in key trades, ensuring greater quality control, cost efficiency, and reliable project outcomes. By leveraging deep local market knowledge and a robust network of trusted subcontractors, we consistently deliver projects on budget and on time.          </p>
           <p>
-            Over two decades we have self-performed millions of dollars of work across DCPS, DGS, DPR,
-            and DCHA portfolios. We earned our SBE and DBE certifications not as checkboxes but as
-            commitments — commitments to mobilize faster, hire locally, and keep dollars circulating in
-            the communities we serve.
+          At SPD Contracting, integrity and innovation drive our approach. Our senior leadership team maintains a hands-on role in every project, emphasizing proactive communication, meticulous planning, and advanced technology integration. We partner closely with our clients to create customized solutions that elevate communities, enhance infrastructure, and build lasting value.
+Our vision is to be the most trusted and reliable construction partner in the D.C. region, continuously elevating communities by building infrastructure that shapes the future. With a senior leadership team deeply committed to quality, compliance, and collaborative partnerships, we ensure lasting value for our clients, partners, and community stakeholders.
+SPD Contracting, Inc.—Building Tomorrow’s Washington, D.C., Today.
           </p>
           <p>
             Today SPD Contracting operates across the full project lifecycle: preconstruction strategy,
@@ -142,7 +136,19 @@ $img_base = 'https://lh3.googleusercontent.com/aida-public/';
 
     <!-- ========== 6. EXECUTIVE LEADERSHIP ========== -->
     <section class="content-section" aria-label="Executive Leadership">
-      <h2 class="section-title">Executive Leadership</h2>
+      <div class="leadership-intro">
+        <div class="leadership-intro__media">
+          <img src="https://spd.adratech.click/images/spd-construction.webp" alt="SPD Contracting Leadership">
+        </div>
+        <div class="leadership-intro__content">
+          <h2 class="section-title">Executive Leadership</h2>
+          <p>The leadership team at SPD Contracting, Inc. consists of seasoned construction industry veterans committed to excellence, integrity, and innovation. Proudly headquartered in Washington, D.C.'s Ward 5, our senior officers possess deep local expertise and share a collective vision dedicated to quality, honesty, and lasting client relationships.</p>
+          <p>Our senior executives leverage decades of experience managing projects throughout the District, Maryland, and Virginia (DMV) region. By combining local market expertise with advanced construction management techniques and cutting-edge technology, we ensure efficient project delivery tailored to each client's unique needs.</p>
+          <p>Our teams are thoughtfully assembled, harnessing in-house self-performance capabilities and the strengths of specialized subcontractors to deliver consistent, high-quality outcomes. We believe in transparent communication, proactive management, and building relationships based on mutual trust.</p>
+          <p>At SPD, we understand that success extends beyond project completion. We are deeply invested in the communities we serve across Washington, D.C., Maryland, and Virginia&mdash;committed to responsible building practices, sustainability, and LEED-certified approaches. Our expertise in sustainable construction not only supports environmental responsibility but also enhances long-term project value for our clients and the community.</p>
+          <p>Our shared vision for quality, integrity, and innovation drives us to continually improve and positively impact the communities we serve across the DMV region.</p>
+        </div>
+      </div>
       <div class="leadership-grid">
 
         <div class="leader-card">

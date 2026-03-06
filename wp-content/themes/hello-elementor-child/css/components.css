@@ -85,7 +85,7 @@ body.spd-theme .site-footer .container,
 /* Logo footer: más compacto que navbar, proporción 779×164 */
 .footer__logo-img {
   display: block;
-  height: 40px;
+  height: 60px;
   width: auto;
   max-width: 220px;
   object-fit: contain;

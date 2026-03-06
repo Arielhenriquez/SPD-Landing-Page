@@ -26,13 +26,13 @@ $approach_url     = function_exists( 'spd_page_url_by_slug' ) ? spd_page_url_by_
 
     <section class="approach" id="approach">
       <div class="container">
-        <h2 class="section-label">Approach & Expertise</h2>
+        <h2 class="section-label">Company Info</h2>
         <div class="approach-grid">
           <div class="approach-headline">
             <h3>At SPD Contracting, integrity and innovation drive our approach.</h3>
           </div>
           <div class="approach-text">
-            <p>At SPD Contracting, Inc., our comprehensive and integrated approach focuses on project delivery from conception through completion. Leveraging decades of industry experience, we offer specialized expertise and tailored solutions to meet diverse client needs across the D.C. region.</p>
+            <p>SPD Contracting, Inc. was founded in Washington D.C. in 2018 by Rodolfo Gonzalez, obtaining its District Certified Business Enterprise (CBE) certification in 2020. Eager to work directly for the Department of General Services (DGS), SPD Contracting, Inc.</p>
           </div>
         </div>
         <div class="metrics">
