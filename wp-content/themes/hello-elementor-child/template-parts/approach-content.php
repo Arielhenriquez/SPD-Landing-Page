@@ -22,7 +22,7 @@ $projects_data = include get_stylesheet_directory() . '/inc/projects-data.php';
 
   <div class="container approach-page-body">
     <section class="content-section" aria-label="Intro">
-      <p class="approach-intro">Our integrated approach focuses on project delivery from conception through completion, with specialized expertise across educational facilities, government buildings, municipal and healthcare, housing, and recreational projects.</p>
+      <p class="approach-intro">At SPD Contracting, Inc., our comprehensive and integrated approach focuses on project delivery from conception through completion. Leveraging decades of industry experience, we offer specialized expertise and tailored solutions to meet diverse client needs across the D.C. region.</p>
     </section>
 
     <section class="content-section" aria-label="Government Owned Buildings">

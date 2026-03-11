@@ -16,6 +16,7 @@ $hero_image = isset( $project['image'] ) ? $project['image'] : '';
 $category_label = isset( $project['category_label'] ) ? $project['category_label'] : ( isset( $project['category'] ) ? $project['category'] : '' );
 $title = isset( $project['title'] ) ? $project['title'] : '';
 $excerpt = isset( $project['excerpt'] ) ? $project['excerpt'] : '';
+$overview = isset( $project['overview'] ) ? $project['overview'] : $excerpt;
 $gallery_images = isset( $project['gallery_images'] ) && is_array( $project['gallery_images'] ) ? $project['gallery_images'] : array( $hero_image );
 $current_slug = isset( $project['slug'] ) ? $project['slug'] : '';
 
@@ -35,11 +36,19 @@ $current_slug = isset( $project['slug'] ) ? $project['slug'] : '';
 		<div class="project-overview__grid">
 			<div class="project-overview__card">
 				<h3>Overview</h3>
-				<p><?php echo esc_html( $excerpt ); ?></p>
+				<p><?php echo esc_html( $overview ); ?></p>
 			</div>
 			<div class="project-overview__card">
 				<h3>Scope</h3>
-				<p>This project falls under <?php echo esc_html( isset( $project['category'] ) ? $project['category'] : $category_label ); ?>.</p>
+				<p><?php
+					if ( ! empty( $project['scope'] ) ) {
+						echo esc_html( $project['scope'] );
+					} else {
+						echo 'This project falls under ';
+						echo esc_html( isset( $project['category'] ) ? $project['category'] : $category_label );
+						echo '.';
+					}
+				?></p>
 			</div>
 		</div>
 	</section>

@@ -39,6 +39,8 @@ $projects_data = include get_stylesheet_directory() . '/inc/projects-data.php';
         <div class="c-carousel__dots" aria-label="Pagination"></div>
       </div>
     </section>
+    <p> SPD Contracting, Inc. specializes in diverse sectors such as Education, Private Ventures, Municipal Projects, & Emergency Response-Oriented Endeavors.
+SPD is committed to delivering innovative solutions to meet the unique needs of each project. </pted to delivering innovative solutions to meet the unique needs of each project. </p>
 
     <section class="content-section" aria-label="Our Services">
       <h2 class="section-title">Our Services</h2>

@@ -102,46 +102,29 @@ $related = array_values( $projects );
 	<?php if ( $related ) : ?>
 		<section class="project-related content-section" aria-label="Related Projects">
 			<h2 class="section-title">Related Projects</h2>
-			<div class="c-carousel"
-			     data-carousel
-			     data-carousel-loop="true"
-			     data-carousel-dots="false"
-			     data-carousel-breakpoints='{"0":1,"768":2,"900":3}'
-			     aria-label="Related projects">
-				<div class="c-carousel__viewport">
-					<div class="c-carousel__track">
-						<?php foreach ( $related as $p ) :
-							$p_link = function_exists( 'spd_project_page_url' )
-								? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' )
-								: home_url( '/projects/' );
-						?>
-							<div class="c-carousel__slide">
-								<div class="related-card">
-									<a href="<?php echo esc_url( $p_link ); ?>" class="thumb">
-										<img src="<?php echo esc_url( $p['image'] ); ?>"
-										     alt="<?php echo esc_attr( $p['title'] ); ?>">
-									</a>
-									<div class="body">
-										<h3>
-											<a href="<?php echo esc_url( $p_link ); ?>">
-												<?php echo esc_html( $p['title'] ); ?>
-											</a>
-										</h3>
-										<?php if ( ! empty( $p['excerpt'] ) ) : ?>
-											<p><?php echo esc_html( $p['excerpt'] ); ?></p>
-										<?php endif; ?>
-										<a href="<?php echo esc_url( $p_link ); ?>" class="link">
-											View project &rarr;
-										</a>
-									</div>
-								</div>
+			<div class="ci-featured-work__grid">
+				<?php foreach ( $related as $p ) :
+					$p_link = function_exists( 'spd_project_page_url' )
+						? spd_project_page_url( isset( $p['slug'] ) ? $p['slug'] : '' )
+						: home_url( '/projects/' );
+				?>
+					<article class="ci-work-card">
+						<a href="<?php echo esc_url( $p_link ); ?>" class="ci-work-card__link">
+							<div class="ci-work-card__img">
+								<img src="<?php echo esc_url( $p['image'] ); ?>"
+								     alt="<?php echo esc_attr( $p['title'] ); ?>">
 							</div>
-						<?php endforeach; ?>
-					</div>
-				</div>
-				<button class="c-carousel__btn c-carousel__btn--prev" type="button" aria-label="Previous"></button>
-				<button class="c-carousel__btn c-carousel__btn--next" type="button" aria-label="Next"></button>
-				<div class="c-carousel__dots" aria-label="Pagination"></div>
+							<div class="ci-work-card__body">
+								<p class="ci-work-card__cat"><?php echo esc_html( $p['category_label'] ?: $p['category'] ); ?></p>
+								<h3 class="ci-work-card__title"><?php echo esc_html( $p['title'] ); ?></h3>
+								<?php if ( ! empty( $p['excerpt'] ) ) : ?>
+									<p class="ci-work-card__excerpt"><?php echo esc_html( $p['excerpt'] ); ?></p>
+								<?php endif; ?>
+								<span class="ci-work-card__cta">Read more &rarr;</span>
+							</div>
+						</a>
+					</article>
+				<?php endforeach; ?>
 			</div>
 		</section>
 	<?php endif; ?>
